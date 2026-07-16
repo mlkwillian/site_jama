@@ -9,7 +9,6 @@ const nextConfig = {
   basePath: "/",
   assetPrefix: "/",
 
-  allowedDevOrigins: ["192.168.0.17"],
 };
 
 export default nextConfig;
