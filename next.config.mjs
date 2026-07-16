@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
 
@@ -6,9 +5,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: "/",
-  assetPrefix: "/",
-
+  basePath: "/site_jama",
+  assetPrefix: "/site_jama",
 };
 
 export default nextConfig;
