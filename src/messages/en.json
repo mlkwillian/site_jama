@@ -1,0 +1,261 @@
+{
+  "header": {
+    "logo": {
+      "name": "JAMA",
+      "suffix": "Foundations"
+    },
+    "menu": {
+      "services": "Services",
+      "solutions": "Solutions",
+      "cases": "Projects",
+      "mission": "Mission"
+    },
+    "language": "EN | PT",
+    "requestQuote": "Request a Quote"
+  },
+  "hero": {
+    "badge": "Industrial Engineering",
+    "title": "Building the foundation for",
+    "titleHighlight": "great projects.",
+    "description": "Foundation engineering solutions delivered with commitment, safety, and the highest execution standards for industrial and infrastructure projects.",
+    "buttons": {
+      "quote": "Request a Quote",
+      "projects": "View Projects"
+    },
+    "stats": {
+      "works": {
+        "value": "+200",
+        "label": "Completed Projects"
+      },
+      "experience": {
+        "value": "10+",
+        "label": "Years of Experience"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Technical Commitment"
+      }
+    }
+  },
+  "services": {
+    "badge": "Services",
+    "title": "Complete foundation solutions for projects of any size.",
+    "description": "We operate from planning to execution, using efficient solutions and highly qualified teams to guarantee safety, quality, and productivity.",
+    "button": "Request a Quote",
+    "learnMore": "Learn More",
+    "items": [
+      {
+        "title": "Industrial foundation",
+        "description": "Execution of foundations for industrial structures according to project specifications."
+      },
+      {
+        "title": "Earthworks",
+        "description": "Earthmoving with planning and execution control."
+      },
+      {
+        "title": "Industrial warehouse",
+        "description": "Construction of metal sheds according to structural design."
+      },
+      {
+        "title": "Industrial machine installation",
+        "description": "Industrial installations with precision and safety."
+      },
+      {
+        "title": "Structural projects",
+        "description": "Structural designs in accordance with technical standards and project requirements."
+      },
+      {
+        "title": "Electrical and Plumbing Installations",
+        "description": "Electrical and plumbing installations with precision and safety."
+      },      
+      {
+        "title": "Ground welding",
+        "description": "Ground welding with precision and safety."
+      }
+    ]
+  },
+  "mission": {
+    "badge": "About Us",
+    "title": "Foundation engineering built on trust, experience and innovation.",
+    "description": "Jama Fundações operates on small, medium and large-scale projects, providing complete deep foundation solutions. Our team combines technical expertise, modern equipment and strategic planning to deliver safe and efficient results.",
+    "card": {
+      "subtitle": "Commitment to Engineering",
+      "years": "10+ Years",
+      "description": "Building solid foundations for major projects."
+    },
+    "button": "Talk to Our Team",
+    "values": [
+      {
+        "title": "Mission",
+        "description": "Deliver foundation solutions with excellence, ensuring safety, quality and on-time delivery in every project."
+      },
+      {
+        "title": "Vision",
+        "description": "To become a national reference in foundation engineering, recognized for innovation, reliability and performance."
+      },
+      {
+        "title": "Values",
+        "description": "Ethics, commitment, transparency, respect for people and continuous improvement in every process."
+      }
+    ]
+  },
+
+  "differentials": {
+    "badge": "Why Choose Us",
+    "title": "Engineering, projects and reliability in every foundation.",
+    "description": "Our work is driven by technical quality, innovation and commitment to results, providing safe solutions for projects of every size.",
+    "items": [
+      {
+        "title": "Safety",
+        "description": "Strict procedures and highly trained teams ensure maximum safety throughout every stage of construction."
+      },
+      {
+        "title": "Quality",
+        "description": "Technical control, certified materials and execution according to engineering standards and regulations."
+      },
+      {
+        "title": "Projects",
+        "description": "Design, planning and development of structural solutions for foundations and industrial buildings."
+      },
+      {
+        "title": "Specialized Team",
+        "description": "Experienced engineers and professionals overseeing every project from planning to completion."
+      }
+    ]
+  },
+
+  "metrics": {
+    "badge": "Results",
+    "title": "Numbers that reflect our experience.",
+    "description": "Every completed project represents our commitment to quality, safety and excellence in foundation engineering.",
+    "items": [
+      {
+        "value": 200,
+        "suffix": "+",
+        "label": "Completed Projects"
+      },
+      {
+        "value": 150000,
+        "suffix": " m³",
+        "label": "Executed Volume"
+      },
+      {
+        "value": 7,
+        "suffix": "",
+        "label": "States Served"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "Years of Experience"
+      }
+    ]
+  },
+  "clients": {
+    "badge": "Clients & Partners",
+    "title": "Companies that trust Jama Foundations",
+    "description": "We work on industrial, commercial, logistics, and infrastructure projects alongside leading companies in the market."
+  },
+
+  
+  "contact": {
+    "badge": "Contact",
+    "title": "Let's build your next project.",
+    "description": "Get in touch to request a quote or speak with our technical team.",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "servicePlaceholder": "Select a service",
+      "message": "Tell us a little about your project...",
+      "button": "Request a Quote",
+      "service1": "Industrial foundation",
+      "service2": "Earthworks",
+      "service3": "Industrial warehouse",
+      "service4": "Industrial machine installation",
+      "service5": "Structural projects",
+      "service6": "Electrical and Plumbing Installations",
+      "service7": "Ground welding"
+    },
+    "info": {
+      "title": "Talk to our specialists",
+      "description": "Our team is ready to understand your needs and recommend the best solution for your project.",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "address": "Address",
+      "businessHours": "Business Hours",
+      "weekdays": "Monday to Friday",
+      "hours": "7:00 AM - 6:00 PM"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Experts in foundations, earthworks, and industrial structures, delivering high-quality and safe construction solutions."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "services": "Services",
+      "solutions": "Solutions",
+      "cases": "Projects",
+      "mission": "Mission",
+      "contact": "Contact"
+    },
+    "institutional": {
+      "title": "Company",
+      "privacyPolicy": "Privacy Policy",
+      "clientPortal": "Client Portal",
+      "careers": "Careers"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "JAMA Fundações. All rights reserved."
+  },
+  "portal": {
+    "badge": "Client Portal",
+    "title": "Track your project in real time.",
+    "description": "Our portal provides complete transparency throughout your project's execution. Access schedules, technical documents, project progress, and monitor every stage with ease.",
+    "button": "Access Portal",
+    "dashboard": {
+      "label": "Client Portal",
+      "project": "Project • Central Mall",
+      "status": "In Progress",
+      "progress": "Foundation Execution",
+      "cards": [
+        {
+          "title": "Schedule",
+          "text": "Updated in real time"
+        },
+        {
+          "title": "Technical Documents",
+          "text": "ARTs, reports and documentation"
+        },
+        {
+          "title": "Technical Manager",
+          "text": "Eng. Carlos Silva"
+        },
+        {
+          "title": "Delivery forecast",
+          "text": "September/2026"
+        },
+        {
+          "title": "Last Update",
+          "text": "Today at 2:35 PM"
+        }
+      ]
+    },
+    "features": [
+      "Up-to-date execution schedule",
+      "Technical documents available",
+      "Real-time project indicators",
+      "Technical manager identified",
+      "Secure and exclusive access"
+    ]
+  }
+
+
+
+
+}

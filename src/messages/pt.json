@@ -1,0 +1,261 @@
+{
+  "header": {
+    "logo": {
+      "name": "JAMA",
+      "suffix": "Fundações"
+    },
+    "menu": {
+      "services": "Serviços",
+      "solutions": "Soluções",
+      "cases":"Cases",
+      "mission": "Missão"
+    },
+    "language": "PT | EN",
+    "requestQuote": "Solicitar orçamento"
+  },
+  "hero": {
+    "badge": "Engenharia industrial",
+    "title": "Construindo a base dos",
+    "titleHighlight": "grandes projetos.",
+    "description": "Soluções em fundações com compromisso, segurança e alto padrão de execução para obras industriais e de infraestrutura.",
+    "buttons": {
+      "quote": "Solicitar orçamento",
+      "projects": "Ver projetos"
+    },
+    "stats": {
+      "works": {
+        "value": "+200",
+        "label": "Obras entregues"
+      },
+      "experience": {
+        "value": "10+",
+        "label": "Anos de experiência"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Compromisso técnico"
+      }
+    }
+  },
+  "services": {
+    "badge": "Serviços",
+    "title": "Soluções completas em fundações para qualquer porte de obra.",
+    "description": "Atuamos desde o planejamento até a execução, utilizando soluções eficientes e equipes altamente qualificadas para garantir segurança, qualidade e produtividade.",
+    "button": "Solicitar orçamento",
+    "learnMore": "Saiba mais",
+    "items": [
+      {
+        "title": "Fundação industrial",
+        "description": "Execução de fundações para estruturas industriais conforme especificação de projeto."
+      },
+      {
+        "title": "Terraplanagem",
+        "description": "Movimentação de terra com planejamento e controle de execução."
+      },
+      {
+        "title": "Galpão industrial",
+        "description": "Execução de galpões metálicos conforme projeto estrutural."
+      },
+      {
+        "title": "Instalação de maquina industrial",
+        "description": "Instalações industriais com precisão e segurança."
+      },
+      {
+        "title": "Projetos estruturais",
+        "description": "Projetos estruturais conforme normas técnicas e requisitos do empreendimento."
+      },
+      {
+        "title": "Instalações eletricas e Hidráulicas",
+        "description": "Instalações elétricas e hidráulicas com precisão e segurança."
+      },      
+      {
+        "title": "Soldagem de solo",
+        "description": "Soldagem de solo com precisão e segurança."
+      }
+    ]
+  },
+  "mission": {
+    "badge": "Quem Somos",
+    "title": "Engenharia de fundações baseada em confiança, experiência e inovação.",
+    "description": "A Jama Fundações atua em obras de pequeno, médio e grande porte, oferecendo soluções completas em fundações profundas. Nossa equipe une experiência técnica, equipamentos modernos e planejamento para entregar resultados com segurança e eficiência.",
+    "card": {
+      "subtitle": "Compromisso com a engenharia",
+      "years": "+10 anos",
+      "description": "Construindo bases sólidas para grandes projetos."
+    },
+    "button": "Fale com nossa equipe",
+    "values": [
+      {
+        "title": "Missão",
+        "description": "Executar fundações com excelência, garantindo segurança, qualidade e cumprimento dos prazos em cada projeto."
+      },
+      {
+        "title": "Visão",
+        "description": "Ser referência nacional em engenharia de fundações, reconhecida pela inovação, confiabilidade e desempenho."
+      },
+      {
+        "title": "Valores",
+        "description": "Ética, compromisso, transparência, valorização das pessoas e melhoria contínua em todos os processos."
+      }
+    ]
+  },
+
+  "differentials": {
+    "badge": "Diferenciais",
+    "title": "Engenharia, projetos e confiança em cada fundação.",
+    "description": "Nossa atuação é baseada em qualidade técnica, inovação e compromisso com resultados, oferecendo soluções seguras para obras de todos os portes.",
+    "items": [
+      {
+        "title": "Segurança",
+        "description": "Processos rigorosos e equipes capacitadas para garantir máxima segurança em todas as etapas da obra."
+      },
+      {
+        "title": "Qualidade",
+        "description": "Controle técnico, materiais certificados e execução seguindo normas e padrões de engenharia."
+      },
+      {
+        "title": "Projetos",
+        "description": "Projetos, planejamento e desenvolvimento de soluções estruturais para fundações e galpões industriais."
+      },
+      {
+        "title": "Equipe Especializada",
+        "description": "Engenheiros e profissionais experientes acompanhando cada obra do início à entrega."
+      }
+    ]
+  },
+
+  "metrics": {
+    "badge": "Resultados",
+    "title": "Números que refletem nossa experiência.",
+    "description": "Cada projeto executado representa nosso compromisso com qualidade, segurança e excelência na engenharia de fundações.",
+    "items": [
+      {
+        "value": 200,
+        "suffix": "+",
+        "label": "Obras Entregues"
+      },
+      {
+        "value": 150000,
+        "suffix": " m³",
+        "label": "Volume Executado"
+      },
+      {
+        "value": 7,
+        "suffix": "",
+        "label": "Estados Atendidos"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "Anos de Experiência"
+      }
+    ]
+  },
+
+  "clients": {
+    "badge": "Clientes e Parceiros",
+    "title": "Empresas que confiam na Jama Fundações",
+    "description": "Atuamos em obras industriais, comerciais, logísticas e de infraestrutura ao lado de grandes empresas do mercado."
+  },
+
+  
+  "contact": {
+    "badge": "Contato",
+    "title": "Vamos construir seu próximo projeto.",
+    "description": "Entre em contato para solicitar um orçamento ou conversar com nossa equipe técnica.",
+    "form": {
+      "name": "Nome",
+      "company": "Empresa",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "servicePlaceholder": "Selecione um serviço",
+      "message": "Conte-nos um pouco sobre sua obra...",
+      "button": "Solicitar orçamento",
+      "service1": "Fundação industrial",
+      "service2": "Terraplanagem",
+      "service3": "Galpão industrial",
+      "service4": "Instalação de maquina industrial",
+      "service5": "Projetos estruturais",
+      "service6": "Instalações eletricas e Hidráulicas",
+      "service7": "Soldagem de solo"
+    },
+    "info": {
+      "title": "Fale com nossos especialistas",
+      "description": "Nossa equipe está pronta para entender sua necessidade e indicar a melhor solução para sua obra.",
+      "phone": "Telefone",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "address": "Endereço",
+      "businessHours": "Horário de atendimento",
+      "weekdays": "Segunda a Sexta",
+      "hours": "07:00 às 18:00"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Especialistas em fundações, terraplanagem e estruturas industriais, entregando soluções para obras com qualidade e segurança."
+    },
+    "navigation": {
+      "title": "Navegação",
+      "services": "Serviços",
+      "solutions": "Soluções",
+      "cases": "Cases",
+      "mission": "Missão",
+      "contact": "Contato"
+    },
+    "institutional": {
+      "title": "Institucional",
+      "privacyPolicy": "Política de Privacidade",
+      "clientPortal": "Portal do Cliente",
+      "careers": "Trabalhe Conosco"
+    },
+    "contact": {
+      "title": "Contato"
+    },
+    "copyright": "JAMA Fundações. Todos os direitos reservados."
+  },
+  
+  "portal": {
+    "badge": "Portal do Cliente",
+    "title": "Acompanhe sua obra em tempo real.",
+    "description": "Nosso portal oferece total transparência durante a execução da obra. Consulte cronogramas, documentos técnicos, andamento dos serviços e acompanhe cada etapa com praticidade.",
+    "button": "Acessar Portal",
+    "dashboard": {
+      "label": "Portal do Cliente",
+      "project": "Obra • Shopping Central",
+      "status": "Em andamento",
+      "progress": "Execução da Fundação",
+      "cards": [
+        {
+          "title": "Cronograma",
+          "text": "Atualizado em tempo real"
+        },
+        {
+          "title": "Documentos Técnicos",
+          "text": "ARTs, laudos e relatórios"
+        },
+        {
+          "title": "Responsável Técnico",
+          "text": "Eng. Resp."
+        },
+        {
+          "title": "Previsão de entrega",
+          "text": "Setembro/2026"
+        },
+        {
+          "title": "Última Atualização",
+          "text": "Hoje às 14:35"
+        }
+      ]
+    },
+    "features": [
+      "Cronograma de execução atualizado",
+      "Documentos técnicos disponíveis",
+      "Indicadores da obra em tempo real",
+      "Responsável técnico identificado",
+      "Acesso seguro e exclusivo"
+    ]
+  }
+
+
+}
