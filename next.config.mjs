@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: "/site_jama",
-  assetPrefix: "/site_jama",
+  basePath: "/",
+  assetPrefix: "/",
 
   allowedDevOrigins: ["192.168.0.17"],
 };
