@@ -50,15 +50,15 @@
       },
       {
         "title": "Earthworks",
-        "description": "Earthmoving with planning and execution control."
+        "description": "Demolition and earthmoving with planning and execution control."
       },
       {
         "title": "Industrial warehouse",
-        "description": "Construction of metal sheds according to structural design."
+        "description": "Metal sheds according to structural design."
       },
       {
         "title": "Industrial machine installation",
-        "description": "Industrial installations with precision and safety."
+        "description": "Industrial facilities with efficiency and reliability."
       },
       {
         "title": "Structural projects",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Electrical and Plumbing Installations",
-        "description": "Electrical and plumbing installations with precision and safety."
+        "description": "Electrical and plumbing installations with quality and safety."
       },      
       {
         "title": "Ground welding",
@@ -261,30 +261,30 @@
     "button": "View All Projects",
     "detailsButton": "View Details",
     "cardDescription": "Foundation work executed with high technical standards, a specialized team, and comprehensive project supervision.",
-    "items": [
+        "items": [
       {
-        "image": "/images/cases/case-1.jpg",
-        "title": "Alpha Logistics Center",
-        "city": "São Paulo, Brazil",
-        "service": "Continuous Flight Auger Piles"
+        "image": "/images/cases/case-1.jpeg",
+        "title": "Industrial foundation N° 170",
+        "city": "Valença • RJ",
+        "description":"Foundation for a 2000 x 25mm cross-cutting line – essential equipment in the steel industry, responsible for cutting coils into sheets with high precision and productivity."
       },
       {
-        "image": "/images/cases/case-2.jpg",
-        "title": "Plaza Shopping Mall",
-        "city": "Campinas, Brazil",
-        "service": "Deep Foundations"
+        "image": "/images/cases/case-2.jpeg",
+        "title": "Industrial foundation N° 168",
+        "city": "Betim • MG",
+        "description":"Foundation completed for installation of a 2000x25mm cross-cutting machine."
       },
       {
-        "image": "/images/cases/case-3.jpg",
-        "title": "Beta Industrial Complex",
-        "city": "Sorocaba, Brazil",
-        "service": "Retaining Structures"
+        "image": "/images/cases/case-3.jpeg",
+        "title": "Industrial warehouse",
+        "city": "Ipiranga  • SP",
+        "description":"Industrial warehouse with 6,100m² of constructed area, including foundation and fire suppression system installation."
       },
       {
-        "image": "/images/cases/case-4.jpg",
-        "title": "Regional Hospital",
-        "city": "Ribeirão Preto, Brazil",
-        "service": "Bored Piles"
+        "image": "/images/cases/case-4.jpeg",
+        "title": "Industrial warehouse",
+        "city": "Volta Redonda • RJ",
+        "description":"Warehouse with structure for 5/10/20 inch overhead cranes."
       }
     ]
   }
