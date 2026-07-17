@@ -10,7 +10,7 @@ export default function Hero() {
     const { locale } = useLanguage();
 
     const t = messages[locale].hero;
-
+    
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
@@ -24,15 +24,15 @@ export default function Hero() {
                 loop
                 playsInline
                 className="
-                    absolute
-                    inset-0
-                    h-full
-                    w-full
-                    object-cover
-                    "
+          absolute
+          inset-0
+          h-full
+          w-full
+          object-cover
+        "
             >
                 <source
-                    src={`${basePath}/videos/hero.mp4`}
+                    src="/videos/hero.mp4"
                     type="video/mp4"
                 />
             </video>

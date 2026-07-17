@@ -216,13 +216,13 @@
   },
   
   "portal": {
-    "badge": "Portal do Cliente",
+    "badge": "Diadema",
     "title": "Acompanhe sua obra em tempo real.",
     "description": "Nosso portal oferece total transparência durante a execução da obra. Consulte cronogramas, documentos técnicos, andamento dos serviços e acompanhe cada etapa com praticidade.",
     "button": "Acessar Portal",
     "dashboard": {
       "label": "Portal do Cliente",
-      "project": "Obra • Shopping Central",
+      "project": "Obra • Galpão industrial",
       "status": "Em andamento",
       "progress": "Execução da Fundação",
       "cards": [
@@ -232,11 +232,11 @@
         },
         {
           "title": "Documentos Técnicos",
-          "text": "ARTs, laudos e relatórios"
+          "text": "Projetos e relatórios"
         },
         {
           "title": "Responsável Técnico",
-          "text": "Eng. Resp."
+          "text": "Equipe JAMA"
         },
         {
           "title": "Previsão de entrega",
@@ -255,7 +255,42 @@
       "Responsável técnico identificado",
       "Acesso seguro e exclusivo"
     ]
+  },
+  "cases": {
+    "badge": "Cases de Sucesso",
+    "title": "Obras que reforçam nossa experiência.",
+    "description": "Cada projeto é executado com planejamento, segurança e precisão, entregando resultados que geram confiança aos nossos clientes.",
+    "button": "Ver todos os projetos",
+    "detailsButton": "Ver detalhes",
+    "cardDescription": "Execução de fundações com alto padrão técnico, equipe especializada e acompanhamento completo da obra.",
+    "items": [
+      {
+        "image": "/images/cases/case-1.jpeg",
+        "title": "Fundação industrial N° 170",
+        "city": "Valença • RJ",
+        "description":"Fundação para uma linha de corte transversal 2000 x 25mm – equipamento essencial na indústria do aço, responsável pelo corte de bobinas em chapas com alta precisão e produtividade."
+      },
+      {
+        "image": "/images/cases/case-2.jpeg",
+        "title": "Fundação industrial N° 168",
+        "city": "Betim • MG",
+        "description":"Fundação concluída para instalação de máquina de corte transversal 2.000x25mm."
+      },
+      {
+        "image": "/images/cases/case-3.jpeg",
+        "title": "Galpão industrial",
+        "city": "Ipiranga  • SP",
+        "description":"Galpão industrial com 6.100m² de área construída, incluindo fundação e montagem de sistema de bombeiro."
+      },
+      {
+        "image": "/images/cases/case-4.jpeg",
+        "title": "Galpão industrial",
+        "city": "Volta Redonda • RJ",
+        "description":"Galpão com estrutura para pontes rolantes de 5/10/20."
+      }
+    ]
   }
+
 
 
 }

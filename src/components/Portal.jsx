@@ -122,7 +122,7 @@ export default function Portal() {
 
 
                 <span className="font-bold text-primary">
-                  74%
+                  30%
                 </span>
 
 
@@ -136,7 +136,7 @@ export default function Portal() {
                 <div
                   className="
                     h-3
-                    w-[74%]
+                    w-[30%]
                     rounded-full
                     bg-secondary
                   "

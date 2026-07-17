@@ -14,6 +14,8 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: isProd ? "/site_jama" : "",
   },
+  
+  allowedDevOrigins: ["192.168.0.17"],
 };
 
 export default nextConfig;

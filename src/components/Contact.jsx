@@ -27,17 +27,17 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phone = "5511992182061";
+    const phone = "5511941436113";
 
     const text = `*Novo contato pelo site*
 
-👤 Nome: ${form.name}
-🏢 Empresa: ${form.company}
-📧 E-mail: ${form.email}
-📱 Telefone: ${form.phone}
-🛠️ Serviço: ${form.service}
+ Nome: ${form.name}
+ Empresa: ${form.company}
+ E-mail: ${form.email}
+ Telefone: ${form.phone}
+ Serviço: ${form.service}
 
-💬 Mensagem:
+ Mensagem:
 ${form.message}`;
 
     window.open(

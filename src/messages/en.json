@@ -214,13 +214,13 @@
     "copyright": "JAMA Fundações. All rights reserved."
   },
   "portal": {
-    "badge": "Client Portal",
+    "badge": "Diadema",
     "title": "Track your project in real time.",
     "description": "Our portal provides complete transparency throughout your project's execution. Access schedules, technical documents, project progress, and monitor every stage with ease.",
     "button": "Access Portal",
     "dashboard": {
       "label": "Client Portal",
-      "project": "Project • Central Mall",
+      "project": "Project • Industrial foundation",
       "status": "In Progress",
       "progress": "Foundation Execution",
       "cards": [
@@ -230,11 +230,11 @@
         },
         {
           "title": "Technical Documents",
-          "text": "ARTs, reports and documentation"
+          "text": "Projects and documentation"
         },
         {
           "title": "Technical Manager",
-          "text": "Eng. Carlos Silva"
+          "text": "Team JAMA"
         },
         {
           "title": "Delivery forecast",
@@ -253,9 +253,41 @@
       "Technical manager identified",
       "Secure and exclusive access"
     ]
+  },
+  "cases": {
+    "badge": "Success Stories",
+    "title": "Projects that showcase our expertise.",
+    "description": "Every project is carried out with careful planning, safety, and precision, delivering results that inspire confidence in our clients.",
+    "button": "View All Projects",
+    "detailsButton": "View Details",
+    "cardDescription": "Foundation work executed with high technical standards, a specialized team, and comprehensive project supervision.",
+    "items": [
+      {
+        "image": "/images/cases/case-1.jpg",
+        "title": "Alpha Logistics Center",
+        "city": "São Paulo, Brazil",
+        "service": "Continuous Flight Auger Piles"
+      },
+      {
+        "image": "/images/cases/case-2.jpg",
+        "title": "Plaza Shopping Mall",
+        "city": "Campinas, Brazil",
+        "service": "Deep Foundations"
+      },
+      {
+        "image": "/images/cases/case-3.jpg",
+        "title": "Beta Industrial Complex",
+        "city": "Sorocaba, Brazil",
+        "service": "Retaining Structures"
+      },
+      {
+        "image": "/images/cases/case-4.jpg",
+        "title": "Regional Hospital",
+        "city": "Ribeirão Preto, Brazil",
+        "service": "Bored Piles"
+      }
+    ]
   }
-
-
 
 
 }

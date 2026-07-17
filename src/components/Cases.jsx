@@ -1,33 +1,19 @@
-import { ArrowRight, MapPin } from "lucide-react";
+"use client";
 
-const cases = [
-  {
-    image: "/images/cases/case-1.jpg",
-    title: "Centro Logístico Alpha",
-    city: "São Paulo • SP",
-    service: "Estacas Hélice Contínua",
-  },
-  {
-    image: "/images/cases/case-2.jpg",
-    title: "Shopping Plaza",
-    city: "Campinas • SP",
-    service: "Fundações Profundas",
-  },
-  {
-    image: "/images/cases/case-3.jpg",
-    title: "Complexo Industrial Beta",
-    city: "Sorocaba • SP",
-    service: "Contenções",
-  },
-  {
-    image: "/images/cases/case-4.jpg",
-    title: "Hospital Regional",
-    city: "Ribeirão Preto • SP",
-    service: "Estacas Escavadas",
-  },
-];
+import { ArrowRight, MapPin } from "lucide-react";
+import { messages } from "@/lib/translations";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 
 export default function Cases() {
+  const { locale } = useLanguage();
+
+  const t = messages[locale].cases;
+
+  const cases = t.items.map((item) => ({
+    ...item,
+  }));
+
   return (
     <section id="cases" className="bg-background py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -36,21 +22,21 @@ export default function Cases() {
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-3xl">
             <span className="font-semibold uppercase tracking-[0.3em] text-secondary">
-              Cases de Sucesso
+              {t.badge}
             </span>
 
             <h2 className="mt-4 text-4xl font-bold text-primary lg:text-5xl">
-              Obras que reforçam nossa experiência.
+              {t.title}
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-text">
-              Cada projeto é executado com planejamento, segurança e precisão,
-              entregando resultados que geram confiança aos nossos clientes.
+              {t.description}
             </p>
           </div>
 
           <a
-            href="#contato"
+            href="https://www.instagram.com/fundacoesjama/"
+            target="_blank"
             className="
               inline-flex
               items-center
@@ -61,7 +47,7 @@ export default function Cases() {
               hover:gap-4
             "
           >
-            Ver todos os projetos
+            {t.button}
             <ArrowRight size={18} />
           </a>
         </div>
@@ -92,7 +78,7 @@ export default function Cases() {
               <div className="relative h-80 overflow-hidden">
 
                 <img
-                  src={`${basePath}{item.image}`}
+                  src={item.image}
                   alt={item.title}
                   className="
                     h-full
@@ -117,22 +103,7 @@ export default function Cases() {
                 />
 
 
-                <span
-                  className="
-                    absolute
-                    left-6
-                    top-6
-                    rounded-full
-                    bg-secondary
-                    px-4
-                    py-2
-                    text-sm
-                    font-semibold
-                    text-white
-                  "
-                >
-                  {item.service}
-                </span>
+
 
               </div>
 
@@ -177,8 +148,7 @@ export default function Cases() {
                     text-text
                   "
                 >
-                  Execução de fundações com alto padrão técnico,
-                  equipe especializada e acompanhamento completo da obra.
+                  {item.description}
                 </p>
 
 
@@ -194,7 +164,7 @@ export default function Cases() {
                     group-hover:gap-4
                   "
                 >
-                  Ver detalhes
+                  {t.detailsButton}
                   <ArrowRight size={18} />
                 </button>
 

@@ -195,7 +195,7 @@ export default function Footer() {
 
 
         <Image
-          src="/images/image-footer.jpeg"
+          src="/images/footer-image.png"
           alt="JAMA Fundações"
           width={250}
           height={80}

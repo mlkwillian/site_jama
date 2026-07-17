@@ -49,7 +49,7 @@ export default function Mission() {
 
 
             <img
-              src={`${basePath}/images/mission.jpeg`}
+              src="/images/mission.jpeg"
               alt="Equipe da Jama Fundações"
               className="
                 h-[650px]
