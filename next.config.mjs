@@ -1,3 +1,6 @@
+const isProd = process.env.NODE_ENV === "production";
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
 
@@ -5,8 +8,12 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: "/site_jama",
-  assetPrefix: "/site_jama",
+  basePath: isProd ? "/site_jama" : "",
+  assetPrefix: isProd ? "/site_jama" : "",
+
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/site_jama" : "",
+  },
 };
 
 export default nextConfig;

@@ -13,6 +13,8 @@ export default function Mission() {
 
   const t = messages[locale].mission;
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const icons = [
     Award,
     ShieldCheck,
@@ -47,7 +49,7 @@ export default function Mission() {
 
 
             <img
-              src="/images/mission.jpeg"
+              src={`${basePath}/images/mission.jpeg`}
               alt="Equipe da Jama Fundações"
               className="
                 h-[650px]

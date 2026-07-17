@@ -92,7 +92,7 @@ export default function Cases() {
               <div className="relative h-80 overflow-hidden">
 
                 <img
-                  src={item.image}
+                  src={`${basePath}{item.image}`}
                   alt={item.title}
                   className="
                     h-full

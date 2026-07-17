@@ -2,6 +2,7 @@
 
 import { messages } from "@/lib/translations";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 const clients = [
   "/logos/logo1.jpeg",
@@ -30,9 +31,9 @@ const clients = [
 ];
 
 export default function Clients() {
-    const { locale } = useLanguage();
+  const { locale } = useLanguage();
 
-    const t = messages[locale].clients;
+  const t = messages[locale].clients;
 
   return (
     <section className="bg-white py-20">
@@ -133,9 +134,11 @@ export default function Clients() {
                 "
               >
 
-                <img
+                <Image
                   src={logo}
                   alt="Cliente Jama Fundações"
+                  width={160}
+                  height={48}
                   className="
                     max-h-12
                     w-auto
