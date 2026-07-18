@@ -14,6 +14,8 @@ export default function Cases() {
     ...item,
   }));
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  
   return (
     <section id="cases" className="bg-background py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -78,7 +80,7 @@ export default function Cases() {
               <div className="relative h-80 overflow-hidden">
 
                 <img
-                  src={item.image}
+                  src={`${basePath}{item.image}`}
                   alt={item.title}
                   className="
                     h-full

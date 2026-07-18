@@ -32,7 +32,7 @@ export default function Hero() {
         "
             >
                 <source
-                    src="/videos/hero.mp4"
+                    src={`${basePath}/videos/hero.mp4`}
                     type="video/mp4"
                 />
             </video>

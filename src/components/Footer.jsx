@@ -20,6 +20,8 @@ export default function Footer() {
   const { locale } = useLanguage();
 
   const t = messages[locale].footer;
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <footer className="bg-primary text-white">
 
@@ -195,7 +197,7 @@ export default function Footer() {
 
 
         <Image
-          src="/images/footer-image.png"
+          src={`${basePath}/images/footer-image.png`}
           alt="JAMA Fundações"
           width={250}
           height={80}

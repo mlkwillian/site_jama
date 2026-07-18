@@ -35,6 +35,8 @@ export default function Clients() {
 
   const t = messages[locale].clients;
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -135,7 +137,7 @@ export default function Clients() {
               >
 
                 <Image
-                  src={logo}
+                  src={`${basePath}{logo}`}
                   alt="Cliente Jama Fundações"
                   width={160}
                   height={48}
