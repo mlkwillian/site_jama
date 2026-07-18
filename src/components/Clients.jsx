@@ -137,7 +137,7 @@ export default function Clients() {
               >
 
                 <Image
-                  src={`${basePath}{logo}`}
+                  src={`${basePath}${logo}`}
                   alt="Cliente Jama Fundações"
                   width={160}
                   height={48}
