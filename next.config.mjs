@@ -12,6 +12,10 @@ const nextConfig = {
 
   basePath: isProd ? "/site_jama" : "",
   assetPrefix: isProd ? "/site_jama" : "",
+
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/site_jama" : "",
+  },
 };
 
 export default nextConfig;
