@@ -57,8 +57,8 @@
         "description": "Galpões metálicos conforme projeto estrutural."
       },
       {
-        "title": "Instalação de maquina industrial",
-        "description": "Instalações industriais com eficiência e confiabilidade."
+        "title": "Instalação de pontes rolantes",
+        "description": "Instalação de pontes rolantes com eficiência e confiabilidade."
       },
       {
         "title": "Projetos estruturais",
@@ -67,10 +67,6 @@
       {
         "title": "Instalações eletricas e Hidráulicas",
         "description": "Instalações elétricas e hidráulicas com qualidade e segurança."
-      },      
-      {
-        "title": "Soldagem de solo",
-        "description": "Soldagem de solo com precisão e segurança."
       }
     ]
   },
@@ -216,7 +212,7 @@
   },
   
   "portal": {
-    "badge": "Diadema",
+    "badge": "Sumaré",
     "title": "Acompanhe sua obra em tempo real.",
     "description": "Nosso portal oferece total transparência durante a execução da obra. Consulte cronogramas, documentos técnicos, andamento dos serviços e acompanhe cada etapa com praticidade.",
     "button": "Acessar Portal",
@@ -224,7 +220,7 @@
       "label": "Portal do Cliente",
       "project": "Obra • Galpão industrial",
       "status": "Em andamento",
-      "progress": "Execução da Fundação",
+      "progress": "Execução do galpão",
       "cards": [
         {
           "title": "Cronograma",

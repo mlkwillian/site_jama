@@ -8,6 +8,7 @@ import {
   LandPlot,
   Pickaxe,
   Warehouse,
+  Cog,
 } from "lucide-react";
 
 import { messages } from "@/lib/translations";
@@ -22,10 +23,10 @@ export default function Services() {
     Drill,
     LandPlot,
     Warehouse,
-    Pickaxe,
+    Cog,
     Building2,
     Factory,
-    Factory,
+    
     
   ];
 
