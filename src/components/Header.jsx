@@ -28,13 +28,13 @@ export default function Header() {
   }, []);
 
   const links = [
+      {
+      name: t.menu.diff,
+      href: "#diferenciais",
+    },
     {
       name: t.menu.services,
       href: "#servicos",
-    },
-    {
-      name: t.menu.solutions,
-      href: "#solucoes",
     },
     {
       name: t.menu.cases,
