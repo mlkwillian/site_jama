@@ -207,8 +207,57 @@
     "contact": {
       "title": "Contact"
     },
-    "copyright": "JAMA Fundações. All rights reserved."
+    "copyright": "JAMA Fundações. All rights reserved.",
+    "privacy": {
+  "title": "Privacy Policy",
+  "intro": "JAMA Fundações respects the privacy of website visitors and is committed to protecting personal data in accordance with applicable data protection laws.",
+  "sections": [
+    {
+      "title": "1. Information Collection",
+      "text": "We only collect information voluntarily provided by users through contact forms, quotation requests, and other communication channels available on our website."
+    },
+    {
+      "title": "2. Use of Information",
+      "text": "The collected information is used exclusively to respond to inquiries, provide information about our services, prepare quotations, and maintain communication with clients and partners."
+    },
+    {
+      "title": "3. Data Sharing",
+      "text": "JAMA Fundações does not sell or share personal data with third parties, except when required by law or authorized by the data subject."
+    },
+    {
+      "title": "4. Information Security",
+      "text": "We adopt technical and organizational measures to protect personal data against unauthorized access, loss, alteration, or improper disclosure."
+    },
+    {
+      "title": "5. Your Rights",
+      "text": "Data subjects may request access, correction, updating, or deletion of their personal data, in accordance with applicable data protection laws."
+    },
+    {
+      "title": "6. Contact",
+      "text": "If you have any questions regarding this Privacy Policy or the processing of your personal data, please contact JAMA Fundações through our official communication channels."
+    }
+  ]
+},
+"careers": {
+  "title": "Careers",
+  "description": "We are always looking for committed, qualified professionals who are passionate about building great projects. Fill out your information below and send us a message. You will then be redirected to WhatsApp to attach your resume.",
+  "fields": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "position": "Desired position",
+    "message": "Message"
   },
+  "placeholder": {
+    "name": "Enter your full name",
+    "email": "Enter your email",
+    "phone": "+1 (555) 123-4567",
+    "position": "e.g. Civil Engineer",
+    "message": "Tell us a little about yourself..."
+  },
+  "button": "Continue on WhatsApp"
+}
+},
   "portal": {
     "badge": "Sumaré",
     "title": "Track your project in real time.",

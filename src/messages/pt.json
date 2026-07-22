@@ -208,8 +208,59 @@
     "contact": {
       "title": "Contato"
     },
-    "copyright": "JAMA Fundações. Todos os direitos reservados."
+    "copyright": "JAMA Fundações. Todos os direitos reservados.",
+  "privacy": {
+    "title": "Política de Privacidade",
+    "intro": "A JAMA Fundações respeita a privacidade dos usuários e está comprometida com a proteção dos dados pessoais.",
+
+    "sections": [
+      {
+        "title": "1. Coleta de informações",
+        "text": "Coletamos apenas os dados fornecidos voluntariamente por meio dos formulários de contato, orçamento e demais canais disponíveis no site."
+      },
+      {
+        "title": "2. Uso das informações",
+        "text": "Os dados são utilizados para responder solicitações, elaborar orçamentos, prestar atendimento e melhorar nossos serviços."
+      },
+      {
+        "title": "3. Compartilhamento de dados",
+        "text": "Não compartilhamos dados pessoais com terceiros, exceto quando houver obrigação legal."
+      },
+      {
+        "title": "4. Segurança",
+        "text": "Adotamos medidas técnicas e administrativas para proteger as informações contra acesso não autorizado, perda ou alteração."
+      },
+      {
+        "title": "5. Direitos do titular",
+        "text": "O titular pode solicitar acesso, correção ou exclusão de seus dados conforme previsto na LGPD."
+      },
+      {
+        "title": "6. Contato",
+        "text": "Em caso de dúvidas sobre esta política, entre em contato pelos nossos canais de atendimento."
+      }
+    ]
   },
+  "careers": {
+  "title": "Trabalhe Conosco",
+  "description": "Estamos sempre em busca de profissionais comprometidos, qualificados e apaixonados por construir grandes projetos. Preencha seus dados abaixo e envie uma mensagem. Em seguida, você será direcionado para o WhatsApp para anexar seu currículo.",
+  "fields": {
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "position": "Cargo de interesse",
+    "message": "Mensagem"
+  },
+  "placeholder": {
+    "name": "Digite seu nome completo",
+    "email": "Digite seu e-mail",
+    "phone": "(11) 99999-9999",
+    "position": "Ex.: Engenheiro Civil",
+    "message": "Conte um pouco sobre você..."
+  },
+  "button": "Continuar no WhatsApp"
+}
+}
+  ,
   
   "portal": {
     "badge": "Sumaré",

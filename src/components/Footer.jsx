@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useState } from "react";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -14,14 +14,50 @@ import {
 } from "lucide-react";
 import { messages } from "@/lib/translations";
 import { useLanguage } from "@/contexts/LanguageContext";
-
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 export default function Footer() {
   const { locale } = useLanguage();
 
+  const [privacyOpen, setPrivacyOpen] = useState(false);
+  const [careersOpen, setCareersOpen] = useState(false);
+
   const t = messages[locale].footer;
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+
+  const handleWhatsApp = (e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+
+    const data = new FormData(form);
+
+    const text = `
+      *Trabalhe Conosco*
+
+      Nome: ${data.get("name")}
+      E-mail: ${data.get("email")}
+      Telefone: ${data.get("phone")}
+      Cargo: ${data.get("position")}
+
+      Mensagem:
+      ${data.get("message")}
+
+      Segue meu currículo em anexo.
+      `;
+
+    const url = `https://wa.me/5511941436113?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <footer className="bg-primary text-white">
 
@@ -114,23 +150,108 @@ export default function Footer() {
                 CNPJ: 17.137.648/0001-07
               </li>
 
+
               <li>
-                {t.institutional.privacyPolicy}
+                <button
+                  onClick={() => setPrivacyOpen(true)}
+                  className="text-white/60 hover:text-secondary transition"
+                >
+                  {t.institutional.privacyPolicy}
+                </button>
               </li>
+
 
               <li>
                 {t.institutional.clientPortal}
               </li>
 
               <li>
-                {t.institutional.careers}
+                <button
+                  onClick={() => setCareersOpen(true)}
+                  className="text-white/60 hover:text-secondary transition"
+                >
+                  {t.institutional.careers}
+                </button>
               </li>
 
             </ul>
 
           </div>
 
+          <Dialog open={careersOpen} onOpenChange={setCareersOpen}>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>{t.careers.title}</DialogTitle>
+              </DialogHeader>
+              <p className="text-sm text-black/60">
+                {t.careers.description}
+              </p>
 
+              <form onSubmit={handleWhatsApp} className="space-y-4">
+                <input
+                  name="name"
+                  placeholder={t.careers.placeholder.name}
+                  required
+                  className="w-full rounded-lg border p-3"
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder={t.careers.placeholder.email}
+                  required
+                  className="w-full rounded-lg border p-3"
+                />
+
+                <input
+                  name="phone"
+                  placeholder={t.careers.placeholder.phone}
+                  className="w-full rounded-lg border p-3"
+                />
+
+                <textarea
+                  name="message"
+                  placeholder={t.careers.placeholder.message}
+                  className="w-full rounded-lg border p-3"
+                />
+
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-secondary py-3 text-white font-semibold hover:bg-secondary-hover"
+                >
+                  {t.careers.button}
+                </button>
+              </form>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
+            <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>
+                  {t.privacy.title}
+                </DialogTitle>
+              </DialogHeader>
+
+              <p className="text-sm text-muted-foreground">
+                {t.privacy.intro}
+              </p>
+
+              <div className="space-y-6 mt-6">
+                {t.privacy.sections.map((section) => (
+                  <section key={section.title}>
+                    <h3 className="font-semibold text-primary">
+                      {section.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm text-black/70 leading-7">
+                      {section.text}
+                    </p>
+                  </section>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
 
 
 
@@ -196,13 +317,13 @@ export default function Footer() {
           </div>
 
 
-        <Image
-          src={`${basePath}/images/footer-image.png`}
-          alt="JAMA Fundações"
-          width={250}
-          height={80}
-          className="w-40 md:w-52 h-auto opacity-90 rounded-[32px] hover:opacity-100 transition"
-        />
+          <Image
+            src={`${basePath}/images/footer-image.png`}
+            alt="JAMA Fundações"
+            width={250}
+            height={80}
+            className="w-40 md:w-52 h-auto opacity-90 rounded-[32px] hover:opacity-100 transition"
+          />
 
         </div>
 
