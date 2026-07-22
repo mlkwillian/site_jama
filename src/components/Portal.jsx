@@ -12,20 +12,20 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 
 export default function Portal() {
-    const { locale } = useLanguage();
+  const { locale } = useLanguage();
 
-    const t = messages[locale].portal;
+  const t = messages[locale].portal;
 
-      const icons = [
+  const icons = [
     CalendarDays,
     FileText,
     UserRound,
     Clock,
     CircleCheck,
-    
+
   ];
 
-      const cards = t.dashboard.cards.map((item, index) => ({
+  const cards = t.dashboard.cards.map((item, index) => ({
     ...item,
     icon: icons[index],
   }));
@@ -302,28 +302,27 @@ export default function Portal() {
 
 
           {/* CTA */}
-          <a
-            href="#"
+          {/* CTA */}
+          <button
+            disabled
             className="
               mt-10
               inline-flex
               items-center
               gap-2
               rounded-full
-              bg-secondary
+              bg-gray-300
               px-7
               py-4
               font-semibold
-              text-white
-              transition
-              hover:bg-secondary-hover
+              text-gray-600
+              cursor-not-allowed
             "
           >
             {t.button}
 
-            <ArrowRight size={18} />
-
-          </a>
+            <Clock size={18} />
+          </button>
 
 
         </div>
