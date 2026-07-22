@@ -34,7 +34,7 @@ export default function Differentials() {
 
   return (
     <section
-      id="solucoes"
+      id="diferenciais"
       className="bg-background py-24"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

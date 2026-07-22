@@ -14,7 +14,7 @@ export default function Hero() {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
-        <section className="relative min-h-screen overflow-hidden bg-primary">
+        <section id="hero" className="relative min-h-screen overflow-hidden bg-primary">
 
 
             <div className="absolute inset-0 overflow-hidden">
