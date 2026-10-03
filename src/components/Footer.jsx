@@ -29,8 +29,7 @@ export default function Footer() {
 
   const t = messages[locale].footer;
 
-
-  const basePath = "/site_jama";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 
   const handleWhatsApp = (e) => {

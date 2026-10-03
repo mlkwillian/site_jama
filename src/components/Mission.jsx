@@ -13,7 +13,7 @@ export default function Mission() {
 
   const t = messages[locale].mission;
 
-  const basePath = "/site_jama";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const icons = [
     Award,
