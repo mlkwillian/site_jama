@@ -11,7 +11,7 @@ export default function Header() {
 
   const t = messages[locale].header;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
 
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);

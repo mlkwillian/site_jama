@@ -35,7 +35,7 @@ export default function Clients() {
 
   const t = messages[locale].clients;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
 
   return (
     <section className="bg-white py-20">

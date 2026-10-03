@@ -11,7 +11,7 @@ export default function Hero() {
 
     const t = messages[locale].hero;
 
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
 
     return (
         <section id="hero" className="relative min-h-screen overflow-hidden bg-primary">
