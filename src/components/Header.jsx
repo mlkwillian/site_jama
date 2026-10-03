@@ -6,8 +6,6 @@ import { Menu, X, Globe } from "lucide-react";
 import { messages } from "@/lib/translations";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-
-
 export default function Header() {
   const { locale, toggleLanguage } = useLanguage();
 
@@ -17,7 +15,6 @@ export default function Header() {
 
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +27,7 @@ export default function Header() {
   }, []);
 
   const links = [
-      {
+    {
       name: t.menu.diff,
       href: "#diferenciais",
     },
@@ -56,104 +53,110 @@ export default function Header() {
         left-0
         z-50
         w-full
+        overflow-hidden
         transition-all
-        duration-300
-        ${scrolled
-          ? "bg-primary/95 backdrop-blur-xl shadow-lg"
-          : "bg-transparent"
+        duration-500
+        ease-in-out
+        ${
+          scrolled
+            ? "bg-primary/95 backdrop-blur-xl shadow-lg"
+            : "bg-transparent"
         }
       `}
     >
-
       <div
         className={`
           mx-auto
           flex
-          
           max-w-7xl
           items-center
           justify-between
           px-6
           lg:px-8
-
-          ${scrolled
-          ? "h-30"
-          : "h-60"
-        }`}
-        
+          transition-[height]
+          duration-500
+          ease-in-out
+          ${
+            scrolled
+              ? "h-24"
+              : "h-50"
+          }
+        `}
       >
-
         {/* Logo */}
         <Link
           href="/"
           className="
+            flex
+            items-center
             text-2xl
             font-bold
             tracking-tight
             text-white
           "
         >
-          <img src={`${basePath}/images/logo.png`}
-              alt="Logo da Jama Fundações"
-              className={`
-                w-full
-                rounded-[32px]
-                object-cover
-                ${scrolled
-          ? "h-[80px]"
-          : "h-[170px]"
-        }`}
-                
-              >
-          </img>
+          <img
+            src={`${basePath}/images/logo.png`}
+            alt="Logo da Jama Fundações"
+            className={`
+              w-auto
+              rounded-[32px]
+              object-cover
+              transition-all
+              duration-500
+              ease-in-out
+              ${
+                scrolled
+                  ? "h-[65px]"
+                  : "h-[150px]"
+              }
+            `}
+          />
         </Link>
-
-
 
         {/* Desktop */}
         <nav className="hidden items-center gap-10 lg:flex">
-
           {links.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={`
-                transition
+                transition-colors
+                duration-300
                 hover:text-secondary-light
-                ${scrolled
-                  ? "text-white/80"
-                  : "text-white"
+                ${
+                  scrolled
+                    ? "text-white/80"
+                    : "text-white"
                 }
               `}
             >
               {item.name}
             </a>
           ))}
-
         </nav>
-
-
-
 
         {/* Ações */}
         <div className="hidden items-center gap-4 lg:flex">
-
           <button
             className={`
-                        flex
-                        items-center
-                        gap-2
-                        transition
-                        hover:text-secondary-light
-                        ${scrolled ? "text-white/80" : "text-white"}
-                      `}
+              flex
+              items-center
+              gap-2
+              transition-colors
+              duration-300
+              hover:text-secondary-light
+              ${
+                scrolled
+                  ? "text-white/80"
+                  : "text-white"
+              }
+            `}
             onClick={toggleLanguage}
           >
             <Globe size={18} />
             {t.language}
           </button>
-
-
 
           <a
             href="#contato"
@@ -164,37 +167,24 @@ export default function Header() {
               py-3
               font-medium
               text-white
-              transition
+              transition-all
+              duration-300
               hover:bg-secondary-hover
+              hover:scale-[1.02]
             "
           >
             {t.requestQuote}
           </a>
-
         </div>
-
-
-
 
         {/* Mobile */}
         <button
           onClick={() => setOpen(!open)}
-          className="
-            text-white
-            lg:hidden
-          "
+          className="text-white lg:hidden"
         >
-          {open ? (
-            <X size={30} />
-          ) : (
-            <Menu size={30} />
-          )}
+          {open ? <X size={30} /> : <Menu size={30} />}
         </button>
-
       </div>
-
-
-
 
       {/* Menu Mobile */}
       {open && (
@@ -206,10 +196,7 @@ export default function Header() {
             lg:hidden
           "
         >
-
           <nav className="flex flex-col px-6 py-6">
-
-
             {links.map((item) => (
               <a
                 key={item.name}
@@ -220,15 +207,13 @@ export default function Header() {
                   border-white/10
                   py-4
                   text-white/80
-                  transition
+                  transition-colors
                   hover:text-secondary-light
                 "
               >
                 {item.name}
               </a>
             ))}
-
-
 
             <button
               onClick={toggleLanguage}
@@ -243,8 +228,6 @@ export default function Header() {
               <Globe size={18} />
               {t.language}
             </button>
-
-
 
             <a
               href="#contato"
@@ -262,13 +245,9 @@ export default function Header() {
             >
               {t.requestQuote}
             </a>
-
-
           </nav>
-
         </div>
       )}
-
     </header>
   );
 }
