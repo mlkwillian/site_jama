@@ -13,6 +13,8 @@ export default function Header() {
 
   const t = messages[locale].header;
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -64,16 +66,21 @@ export default function Header() {
     >
 
       <div
-        className="
+        className={`
           mx-auto
           flex
-          h-20
+          
           max-w-7xl
           items-center
           justify-between
           px-6
           lg:px-8
-        "
+
+          ${scrolled
+          ? "h-30"
+          : "h-60"
+        }`}
+        
       >
 
         {/* Logo */}
@@ -86,10 +93,19 @@ export default function Header() {
             text-white
           "
         >
-          JAMA{" "}
-          <span className="text-secondary">
-            Fundações
-          </span>
+          <img src={`${basePath}/images/logo.png`}
+              alt="Logo da Jama Fundações"
+              className={`
+                w-full
+                rounded-[32px]
+                object-cover
+                ${scrolled
+          ? "h-[80px]"
+          : "h-[170px]"
+        }`}
+                
+              >
+          </img>
         </Link>
 
 

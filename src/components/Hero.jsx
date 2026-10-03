@@ -79,6 +79,7 @@ export default function Hero() {
                     min-h-screen
                     max-w-7xl
                     items-center
+                    top-10
                     px-6
                     pb-16
                     pt-28
@@ -93,33 +94,7 @@ export default function Hero() {
           "
                 >
 
-                    {/* Badge */}
-                    <motion.span
-                        initial={{
-                            opacity: 0,
-                            y: 30,
-                        }}
-                        animate={{
-                            opacity: 1,
-                            y: 0,
-                        }}
-                        transition={{
-                            duration: 0.6,
-                        }}
-                        className="
-                            rounded-full
-                            border
-                            border-secondary/40
-                            bg-secondary/20
-                            px-4
-                            py-2
-                            text-sm
-                            font-medium
-                            text-secondary-light
-                        "
-                    >
-                        {t.badge}
-                    </motion.span>
+                    
 
 
                     {/* Título */}
