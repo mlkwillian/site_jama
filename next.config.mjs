@@ -3,7 +3,6 @@ const nextConfig = {
   output: "export",
 
   basePath: "/site_jama",
-  assetPrefix: "/site_jama/",
 
   images: {
     unoptimized: true,
