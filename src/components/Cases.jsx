@@ -14,7 +14,8 @@ export default function Cases() {
     ...item,
   }));
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+  const basePath = "/site_jama";
 
   return (
     <section id="cases" className="bg-background py-24">
