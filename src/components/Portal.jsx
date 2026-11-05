@@ -150,7 +150,7 @@ export default function Portal() {
       </p>
 
       <a
-        href="#portal"
+        href="/portal"
         className="
           flex
           w-full
