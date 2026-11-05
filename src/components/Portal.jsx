@@ -47,169 +47,136 @@ export default function Portal() {
       >
 
 
-        {/* Dashboard */}
-        <div className="order-2 lg:order-1">
-
-          <div
-            className="
-              rounded-[32px]
-              border
-              border-black/10
-              bg-white
-              p-6
-              shadow-2xl
-            "
-          >
-
-
-            {/* Topo */}
-            <div
-              className="
-                flex
-                items-center
-                justify-between
-                border-b
-                border-black/10
-                pb-5
-              "
-            >
-
-              <div>
-
-                <p className="text-sm text-black/50">
-                  {t.badge}
-                </p>
-
-
-                <h3 className="text-xl font-bold text-primary">
-                  {t.dashboard.project}
-                </h3>
-
-              </div>
-
-
-
-              <span
-                className="
-                  rounded-full
-                  bg-secondary/10
-                  px-4
-                  py-2
-                  text-sm
-                  font-semibold
-                  text-secondary
-                "
-              >
-                {t.dashboard.status}
-              </span>
-
-
-            </div>
-
-
-
-
-
-            {/* Progresso */}
-            <div className="mt-8">
-
-
-              <div className="flex justify-between">
-
-                <span className="text-black/60">
-                  {t.dashboard.progress}
-                </span>
-
-
-                <span className="font-bold text-primary">
-                  85%
-                </span>
-
-
-              </div>
-
-
-
-
-              <div className="mt-3 h-3 rounded-full bg-black/10">
-
-                <div
-                  className="
-                    h-3
-                    w-[85%]
-                    rounded-full
-                    bg-secondary
-                  "
-                />
-
-              </div>
-
-
-            </div>
-
-
-
-
-
-
-            {/* Cards */}
-            <div className="mt-8 grid gap-4">
-
-
-              {cards.map((item, index) => {
-
-                const Icon = item.icon;
-
-
-                return (
-
-                  <div
-                    key={index}
-                    className="
-                      flex
-                      items-center
-                      gap-4
-                      rounded-2xl
-                      bg-black/5
-                      p-4
-                    "
-                  >
-
-                    <Icon
-                      className="text-secondary"
-                    />
-
-
-                    <div>
-
-                      <h4 className="font-semibold text-primary">
-                        {item.title}
-                      </h4>
-
-
-                      <p className="text-sm text-black/50">
-                        {item.text}
-                      </p>
-
-
-                    </div>
-
-
-                  </div>
-
-                );
-
-              })}
-
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
+       
+{/* Dashboard */}
+<div className="order-2 lg:order-1">
+
+  <div
+    className="
+      rounded-[32px]
+      border
+      border-black/10
+      bg-white
+      p-6
+      shadow-2xl
+    "
+  >
+
+    {/* Topo */}
+    <div
+      className="
+        flex
+        items-center
+        justify-between
+        gap-4
+        border-b
+        border-black/10
+        pb-6
+      "
+    >
+
+      <div>
+
+        <p className="text-sm text-black/50">
+          {t.badge}
+        </p>
+
+        <h3 className="text-2xl font-bold leading-tight text-primary">
+          {t.dashboard.project}
+        </h3>
+
+      </div>
+
+      <span
+        className="
+          shrink-0
+          rounded-full
+          bg-secondary/10
+          px-4
+          py-2
+          text-sm
+          font-semibold
+          text-secondary
+        "
+      >
+        {t.dashboard.status}
+      </span>
+
+    </div>
+
+
+    {/* Progresso */}
+    <div className="py-8">
+
+      <div className="flex items-center justify-between mb-4">
+
+        <span className="text-base text-black/50">
+          {t.dashboard.progress}
+        </span>
+
+        <span className="text-3xl font-bold text-secondary">
+          85%
+        </span>
+
+      </div>
+
+      {/* Barra de progresso */}
+      <div className="h-4 w-full overflow-hidden rounded-full bg-black/10">
+
+        <div
+          className="
+            h-full
+            w-[85%]
+            rounded-full
+            bg-secondary
+          "
+        />
+
+      </div>
+
+      <div className="mt-3 flex justify-between text-sm text-black/40">
+        <span>Início</span>
+        <span>Entrega</span>
+      </div>
+
+    </div>
+
+
+    {/* Rodapé */}
+    <div className="border-t border-black/10 pt-7">
+
+      <p className="mb-6 text-base leading-relaxed text-black/50">
+        {t.dashboard.description}
+      </p>
+
+      <a
+        href="#portal"
+        className="
+          flex
+          w-full
+          items-center
+          justify-center
+          rounded-[20px]
+          bg-secondary
+          px-6
+          py-5
+          text-lg
+          font-bold
+          text-white
+          transition-all
+          duration-300
+          hover:brightness-110
+          hover:shadow-lg
+        "
+      >
+        {t.dashboard.button} →
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
 
 
 
@@ -303,26 +270,7 @@ export default function Portal() {
 
           {/* CTA */}
           {/* CTA */}
-          <button
-            disabled
-            className="
-              mt-10
-              inline-flex
-              items-center
-              gap-2
-              rounded-full
-              bg-gray-300
-              px-7
-              py-4
-              font-semibold
-              text-gray-600
-              cursor-not-allowed
-            "
-          >
-            {t.button}
 
-            <Clock size={18} />
-          </button>
 
 
         </div>

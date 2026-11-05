@@ -5,10 +5,10 @@ import {
   Building2,
   Drill,
   Factory,
-  LandPlot,
-  Pickaxe,
+  Forklift,
   Warehouse,
   Cog,
+  SquareSquare,
 } from "lucide-react";
 
 import { messages } from "@/lib/translations";
@@ -20,12 +20,13 @@ export default function Services() {
   const t = messages[locale].services;
 
   const icons = [
-    Drill,
-    LandPlot,
+    SquareSquare,
+    Forklift,
     Warehouse,
     Cog,
     Building2,
     Factory,
+    
     
     
   ];

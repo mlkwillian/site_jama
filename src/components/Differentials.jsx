@@ -4,7 +4,7 @@ import {
   ShieldCheck,
   BadgeCheck,
   HardHat,
-  Drill,
+  SquareChartGantt,
 } from "lucide-react";
 
 import { messages } from "@/lib/translations";
@@ -21,7 +21,7 @@ export default function Differentials() {
     
     ShieldCheck,
     BadgeCheck,
-    Drill,
+    SquareChartGantt,
     HardHat,
   ];
   console.log(icons);

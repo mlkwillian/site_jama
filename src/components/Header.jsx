@@ -108,7 +108,7 @@ export default function Header() {
               ${
                 scrolled
                   ? "h-[65px]"
-                  : "h-[150px]"
+                  : "h-[120px]"
               }
             `}
           />

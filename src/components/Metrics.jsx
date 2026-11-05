@@ -5,8 +5,11 @@ import {
   Building2,
   HardHat,
   MapPinned,
-  Drill,
+  SquareChartGantt,
+  SquareSquare,
+  Warehouse,
 } from "lucide-react";
+
 import { messages } from "@/lib/translations";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -18,9 +21,11 @@ export default function Metrics() {
 
   const icons = [
     Building2,
-    Drill,
+    SquareChartGantt,
     MapPinned,
     HardHat,
+    Warehouse,
+    SquareSquare,
   ];
 
   const metrics = t.items.map((item, index) => ({
@@ -30,7 +35,7 @@ export default function Metrics() {
   return (
     <section className="bg-primary py-28">
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
 
         {/* Cabeçalho */}
@@ -89,7 +94,7 @@ export default function Metrics() {
             grid
             gap-8
             md:grid-cols-2
-            xl:grid-cols-4
+            xl:grid-cols-3
           "
         >
 

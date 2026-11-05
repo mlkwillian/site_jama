@@ -144,6 +144,16 @@
         "value": 10,
         "suffix": "+",
         "label": "Anos de Experiência"
+      },
+      {
+        "value": 60000,
+        "suffix": " m²+",
+        "label": "De área construída em galpões índustriais"
+      },
+      {
+        "value": 25000,
+        "suffix": " m²+",
+        "label": "Em fundações de máquinas executadas"
       }
     ]
   },
@@ -263,11 +273,14 @@
   ,
   
   "portal": {
+    
     "badge": "Sumaré",
     "title": "Acompanhe sua obra em tempo real.",
-    "description": "Nosso portal oferece total transparência durante a execução da obra. Consulte cronogramas, documentos técnicos, andamento dos serviços e acompanhe cada etapa com praticidade.",
+    "description": "Nosso portal oferece total transparência durante a execução da obra. Consulte cronogramas, andamento dos serviços e acompanhe cada etapa com praticidade.",
     "button": "Em breve",
     "dashboard": {
+      "description": "Quer ver como essa obra está sendo construída? Acompanhe no portal.",
+"button": "Acompanhe no portal",
       "label": "Portal do Cliente",
       "project": "Obra • Galpão industrial",
       "status": "Em andamento",
@@ -276,10 +289,6 @@
         {
           "title": "Cronograma",
           "text": "Atualizado em tempo real"
-        },
-        {
-          "title": "Documentos Técnicos",
-          "text": "Projetos e relatórios"
         },
         {
           "title": "Responsável Técnico",
@@ -297,10 +306,8 @@
     },
     "features": [
       "Cronograma de execução atualizado",
-      "Documentos técnicos disponíveis",
       "Indicadores da obra em tempo real",
-      "Responsável técnico identificado",
-      "Acesso seguro e exclusivo"
+      "Responsável técnico identificado"
     ]
   },
   "cases": {
