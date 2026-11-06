@@ -148,7 +148,8 @@ export default async function AdminObrasPage() {
                                                 </span>
                                             </td>
                                             <td className="px-4 py-5">
-                                                <div className="flex items-center gap-4">
+
+                                                <div className="flex flex-wrap items-center gap-4">
                                                     <Link
                                                         href={`/admin/obras/${obra.id}/editar`}
                                                         className="font-semibold text-primary hover:underline"
@@ -156,11 +157,19 @@ export default async function AdminObrasPage() {
                                                         Editar
                                                     </Link>
 
+                                                    <Link
+                                                        href={`/admin/obras/${obra.id}/fotos`}
+                                                        className="font-semibold text-blue-600 hover:underline"
+                                                    >
+                                                        Gerenciar fotos
+                                                    </Link>
+
                                                     <ExcluirObraButton
                                                         obraId={obra.id}
                                                         nomeObra={obra.nome}
                                                     />
                                                 </div>
+
                                             </td>
                                         </tr>
                                     ))}
