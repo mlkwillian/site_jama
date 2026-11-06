@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import ExcluirObraButton from "./ExcluirObraButton";
 
 export const metadata = {
     title: "Gerenciar Obras | JAMA Fundações",
@@ -139,20 +140,27 @@ export default async function AdminObrasPage() {
                                             <td className="px-4 py-5">
                                                 <span
                                                     className={`rounded-full px-3 py-1 text-xs font-semibold ${obra.publicada
-                                                            ? "bg-green-100 text-green-700"
-                                                            : "bg-yellow-100 text-yellow-700"
+                                                        ? "bg-green-100 text-green-700"
+                                                        : "bg-yellow-100 text-yellow-700"
                                                         }`}
                                                 >
                                                     {obra.publicada ? "Publicada" : "Rascunho"}
                                                 </span>
                                             </td>
                                             <td className="px-4 py-5">
-                                                <Link
-                                                    href={`/admin/obras/${obra.id}/editar`}
-                                                    className="font-semibold text-primary hover:underline"
-                                                >
-                                                    Editar
-                                                </Link>
+                                                <div className="flex items-center gap-4">
+                                                    <Link
+                                                        href={`/admin/obras/${obra.id}/editar`}
+                                                        className="font-semibold text-primary hover:underline"
+                                                    >
+                                                        Editar
+                                                    </Link>
+
+                                                    <ExcluirObraButton
+                                                        obraId={obra.id}
+                                                        nomeObra={obra.nome}
+                                                    />
+                                                </div>
                                             </td>
                                         </tr>
                                     ))}
