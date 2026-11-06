@@ -48,7 +48,7 @@ export default async function PortalPage() {
           </p>
 
           <h1 className="text-4xl font-bold md:text-5xl">
-            Nosso Portfólio de Obras
+            Nosso Portal de Obras
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
