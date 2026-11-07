@@ -1,3 +1,4 @@
+
 "use client";
 
 import { createContext, useContext, useState } from "react";
@@ -8,7 +9,11 @@ export function LanguageProvider({ children }) {
   const [locale, setLocale] = useState("pt");
 
   const toggleLanguage = () => {
-    setLocale((prev) => (prev === "pt" ? "en" : "pt"));
+    setLocale((prev) => {
+      if (prev === "pt") return "en";
+      if (prev === "en") return "es";
+      return "pt";
+    });
   };
 
   return (

@@ -1,11 +1,34 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function ObraGaleria({ obraNome, capaUrl, imagens = [] }) {
+const textosGaleria = {
+  pt: {
+    mainImage: "Imagem principal",
+    viewImage: "Ver imagem",
+    previous: "Imagem anterior",
+    next: "Próxima imagem",
+  },
+  en: {
+    mainImage: "Main image",
+    viewImage: "View image",
+    previous: "Previous image",
+    next: "Next image",
+  },
+};
+
+export default function ObraGaleria({
+  obraNome,
+  capaUrl,
+  imagens = [],
+  locale = "pt",
+}) {
+  const t = textosGaleria[locale] || textosGaleria.pt;
+
   const listaImagens = [
-    ...(capaUrl ? [{ url: capaUrl, descricao: "Imagem principal" }] : []),
+    ...(capaUrl ? [{ url: capaUrl, descricao: t.mainImage }] : []),
     ...imagens
       .filter((imagem) => imagem.url && imagem.url !== capaUrl)
       .map((imagem) => ({
@@ -16,6 +39,10 @@ export default function ObraGaleria({ obraNome, capaUrl, imagens = [] }) {
 
   const [indiceAtual, setIndiceAtual] = useState(0);
   const [pausado, setPausado] = useState(false);
+
+  useEffect(() => {
+    setIndiceAtual(0);
+  }, [obraNome]);
 
   useEffect(() => {
     if (listaImagens.length <= 1 || pausado) return;
@@ -47,72 +74,67 @@ export default function ObraGaleria({ obraNome, capaUrl, imagens = [] }) {
       onMouseEnter={() => setPausado(true)}
       onMouseLeave={() => setPausado(false)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-[120px_minmax(0,1fr)] gap-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-[120px_minmax(0,1fr)]">
 
-        {/* MINIATURAS À ESQUERDA */}
         {listaImagens.length > 1 && (
-          <div className="flex md:flex-col gap-2 overflow-x-auto md:overflow-y-auto md:max-h-[380px] order-2 md:order-1">
+          <div className="order-2 flex gap-2 overflow-x-auto md:order-1 md:max-h-[380px] md:flex-col md:overflow-y-auto">
             {listaImagens.map((imagem, indice) => (
               <button
                 key={`${imagem.url}-${indice}`}
                 type="button"
                 onClick={() => setIndiceAtual(indice)}
-                aria-label={`Ver imagem ${indice + 1}`}
+                aria-label={`${t.viewImage} ${indice + 1}`}
                 aria-current={indiceAtual === indice}
-                className={`relative flex-shrink-0 w-20 h-16 md:w-full md:h-[68px] overflow-hidden rounded-lg border-2 transition-all ${indiceAtual === indice
-                  ? "border-orange-500 opacity-100"
-                  : "border-white/10 opacity-60 hover:opacity-100"
-                  }`}
+                className={`relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all md:h-[68px] md:w-full ${
+                  indiceAtual === indice
+                    ? "border-orange-500 opacity-100"
+                    : "border-white/10 opacity-60 hover:opacity-100"
+                }`}
               >
                 <img
                   src={imagem.url}
-                  alt={`${obraNome} - imagem ${indice + 1}`}
-                  className="w-full h-full object-cover"
+                  alt={`${obraNome} - ${t.viewImage} ${indice + 1}`}
+                  className="h-full w-full object-cover"
                 />
               </button>
             ))}
           </div>
         )}
 
-        {/* IMAGEM PRINCIPAL */}
-        <div className="relative order-1 md:order-2 min-w-0">
-          <div className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+        <div className="relative order-1 min-w-0 md:order-2">
+          <div className="relative h-[260px] w-full overflow-hidden rounded-xl border border-white/10 bg-slate-900 sm:h-[320px] md:h-[380px]">
             <img
               key={imagemAtual.url}
               src={imagemAtual.url}
               alt={imagemAtual.descricao || obraNome}
-              className="w-full h-full object-cover transition-opacity duration-500"
+              className="h-full w-full object-cover transition-opacity duration-500"
             />
 
-            {/* Gradiente para os controles */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-            {/* SETA ANTERIOR */}
             {listaImagens.length > 1 && (
-              <button
-                type="button"
-                onClick={anterior}
-                aria-label="Imagem anterior"
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/50 hover:bg-black/75 text-white flex items-center justify-center transition"
-              >
-                <ChevronLeft size={22} />
-              </button>
+              <>
+                <button
+                  type="button"
+                  onClick={anterior}
+                  aria-label={t.previous}
+                  className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition hover:bg-black/75"
+                >
+                  <ChevronLeft size={22} />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={proxima}
+                  aria-label={t.next}
+                  className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white transition hover:bg-black/75"
+                >
+                  <ChevronRight size={22} />
+                </button>
+              </>
             )}
 
-            {/* SETA PRÓXIMA */}
-            {listaImagens.length > 1 && (
-              <button
-                type="button"
-                onClick={proxima}
-                aria-label="Próxima imagem"
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/50 hover:bg-black/75 text-white flex items-center justify-center transition"
-              >
-                <ChevronRight size={22} />
-              </button>
-            )}
-
-            {/* CONTADOR */}
-            <div className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-xs px-3 py-1">
+            <div className="absolute bottom-3 right-3 rounded-full bg-black/60 px-3 py-1 text-xs text-white">
               {indiceAtual + 1} / {listaImagens.length}
             </div>
           </div>

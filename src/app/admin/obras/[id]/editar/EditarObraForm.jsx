@@ -5,6 +5,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase";
+import EtapasObra from "./EtapasObra";
+import ProgressoMensal from "./ProgressoMensal";
+import AtualizacoesObra from "./AtualizacoesObra";
 
 export default function EditarObraForm({ obra }) {
   const router = useRouter();
@@ -24,10 +27,14 @@ export default function EditarObraForm({ obra }) {
     status: obra.status || "planejada",
     responsavel_tecnico: obra.responsavel_tecnico || "",
     registro_profissional: obra.registro_profissional || "",
-    publicada: obra.publicada || false,
+    publicada: obra.publicada ?? false,
+    area_construida: obra.area_construida ?? "",
+    data_ultimo_acidente: obra.data_ultimo_acidente || "",
   });
 
   const [capa, setCapa] = useState(null);
+  const [modelo3D, setModelo3D] = useState(null);
+  const [removerModelo, setRemoverModelo] = useState(false);
 
   function atualizarCampo(e) {
     const { name, value, type, checked } = e.target;
@@ -48,14 +55,45 @@ export default function EditarObraForm({ obra }) {
       .replace(/^-|-$/g, "");
   }
 
+  async function enviarArquivo(arquivo, tipo) {
+    const dados = new FormData();
+    dados.append("file", arquivo);
+    dados.append("tipo", tipo);
+
+    const resposta = await fetch("/api/upload", {
+      method: "POST",
+      body: dados,
+    });
+
+    const resultado = await resposta.json();
+
+    if (!resposta.ok) {
+      throw new Error(resultado.error || "Erro ao enviar arquivo.");
+    }
+
+    return resultado;
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
 
     setErro("");
     setSucesso("");
 
-    if (form.status === "concluida" && Number(form.percentual) !== 100) {
+    const percentual = Number(form.percentual);
+
+    if (percentual < 0 || percentual > 100 || !Number.isFinite(percentual)) {
+      setErro("O percentual deve estar entre 0 e 100.");
+      return;
+    }
+
+    if (form.status === "concluida" && percentual !== 100) {
       setErro("Uma obra concluída precisa estar com 100% de progresso.");
+      return;
+    }
+
+    if (form.status !== "concluida" && percentual === 100) {
+      setErro("Uma obra com 100% de progresso deve estar como concluída.");
       return;
     }
 
@@ -69,45 +107,46 @@ export default function EditarObraForm({ obra }) {
         public_id: obra.capa_public_id,
       };
 
+      let modeloUrl = removerModelo ? null : obra.modelo_3d_url || null;
+
       if (capa) {
-        const dadosImagem = new FormData();
-        dadosImagem.append("file", capa);
-
-        const resposta = await fetch("/api/upload", {
-          method: "POST",
-          body: dadosImagem,
-        });
-
-        const resultadoImagem = await resposta.json();
-
-        if (!resposta.ok) {
-          throw new Error(
-            resultadoImagem.error || "Erro ao enviar a imagem."
-          );
-        }
+        const resultado = await enviarArquivo(capa, "imagem");
 
         imagem = {
-          url: resultadoImagem.url,
-          public_id: resultadoImagem.public_id,
+          url: resultado.url,
+          public_id: resultado.public_id,
         };
+      }
+
+      if (modelo3D) {
+        const resultado = await enviarArquivo(modelo3D, "modelo3d");
+        modeloUrl = resultado.url;
       }
 
       const { error } = await supabase
         .from("obras")
         .update({
           ...form,
-          percentual: Number(form.percentual),
+          percentual,
+          area_construida: form.area_construida
+            ? Number(form.area_construida)
+            : null,
           data_inicio: form.data_inicio || null,
           previsao_conclusao: form.previsao_conclusao || null,
+          data_ultimo_acidente: form.data_ultimo_acidente || null,
           slug: gerarSlug(form.nome),
           capa_url: imagem.url,
           capa_public_id: imagem.public_id,
+          modelo_3d_url: modeloUrl,
         })
         .eq("id", obra.id);
 
       if (error) throw error;
 
       setSucesso("Obra atualizada com sucesso!");
+      setCapa(null);
+      setModelo3D(null);
+      setRemoverModelo(false);
 
       router.refresh();
     } catch (error) {
@@ -129,11 +168,11 @@ export default function EditarObraForm({ obra }) {
           </Link>
 
           <h1 className="mt-4 text-3xl font-bold text-primary">
-            Editar obra
+            Gerenciar obra
           </h1>
 
           <p className="mt-2 text-gray-500">
-            Atualize as informações do projeto.
+            Gerencie os dados e as informações técnicas do projeto.
           </p>
         </div>
 
@@ -190,6 +229,21 @@ export default function EditarObraForm({ obra }) {
                   className="w-full rounded-lg border border-gray-300 p-3"
                 />
               </div>
+
+              <div>
+                <label className="mb-2 block font-medium">
+                  Área construída (m²)
+                </label>
+                <input
+                  type="number"
+                  name="area_construida"
+                  min="0"
+                  step="0.01"
+                  value={form.area_construida}
+                  onChange={atualizarCampo}
+                  className="w-full rounded-lg border border-gray-300 p-3"
+                />
+              </div>
             </div>
           </section>
 
@@ -220,6 +274,22 @@ export default function EditarObraForm({ obra }) {
                 onChange={atualizarCampo}
                 className="w-full rounded-lg border border-gray-300 p-3"
               />
+            </div>
+
+            <div>
+              <label className="mb-2 block font-medium">
+                Data do último acidente
+              </label>
+              <input
+                type="date"
+                name="data_ultimo_acidente"
+                value={form.data_ultimo_acidente}
+                onChange={atualizarCampo}
+                className="w-full rounded-lg border border-gray-300 p-3"
+              />
+              <p className="mt-1 text-sm text-gray-500">
+                Deixe vazio caso não exista uma data a informar.
+              </p>
             </div>
           </section>
 
@@ -285,15 +355,11 @@ export default function EditarObraForm({ obra }) {
           </section>
 
           <section className="space-y-5">
-            <h2 className="text-xl font-bold text-primary">
-              Imagem de capa
-            </h2>
+            <h2 className="text-xl font-bold text-primary">Imagem de capa</h2>
 
             {obra.capa_url && (
               <div>
-                <p className="mb-2 text-sm text-gray-500">
-                  Imagem atual:
-                </p>
+                <p className="mb-2 text-sm text-gray-500">Imagem atual:</p>
                 <img
                   src={obra.capa_url}
                   alt="Capa atual da obra"
@@ -315,6 +381,91 @@ export default function EditarObraForm({ obra }) {
             </p>
           </section>
 
+          <section className="space-y-5">
+            <h2 className="text-xl font-bold text-primary">
+              Modelo 3D da obra
+            </h2>
+
+            {obra.modelo_3d_url && !removerModelo && (
+              <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                <p className="mb-2 font-medium text-gray-700">
+                  Modelo 3D cadastrado
+                </p>
+                <a
+                  href={obra.modelo_3d_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="break-all text-sm text-blue-600 underline"
+                >
+                  Abrir arquivo atual
+                </a>
+
+                <button
+                  type="button"
+                  onClick={() => setRemoverModelo(true)}
+                  className="mt-3 block text-sm font-semibold text-red-600"
+                >
+                  Remover modelo atual
+                </button>
+              </div>
+            )}
+
+            {removerModelo && (
+              <p className="text-sm text-orange-700">
+                O modelo atual será removido do cadastro ao salvar.
+                <button
+                  type="button"
+                  onClick={() => setRemoverModelo(false)}
+                  className="ml-2 font-semibold underline"
+                >
+                  Desfazer
+                </button>
+              </p>
+            )}
+
+            <input
+              type="file"
+              accept=".glb,model/gltf-binary"
+              onChange={(e) => {
+                const arquivo = e.target.files?.[0];
+
+                if (!arquivo) {
+                  setModelo3D(null);
+                  return;
+                }
+
+                if (!arquivo.name.toLowerCase().endsWith(".glb")) {
+                  setErro("Selecione um arquivo no formato GLB.");
+                  e.target.value = "";
+                  return;
+                }
+
+                if (arquivo.size > 50 * 1024 * 1024) {
+                  setErro("O modelo 3D deve ter no máximo 50 MB.");
+                  e.target.value = "";
+                  return;
+                }
+
+                setErro("");
+                setModelo3D(arquivo);
+                setRemoverModelo(false);
+              }}
+              className="w-full rounded-lg border border-gray-300 p-3"
+            />
+
+            {modelo3D && (
+              <p className="text-sm text-gray-600">
+                Novo arquivo: {modelo3D.name} (
+                {(modelo3D.size / 1024 / 1024).toFixed(2)} MB)
+              </p>
+            )}
+
+            <p className="text-sm text-gray-500">
+              Envie um arquivo GLB de até 50 MB. Um novo arquivo substituirá
+              o endereço do modelo anterior no cadastro.
+            </p>
+          </section>
+
           <section>
             <label className="flex items-center gap-3 font-medium">
               <input
@@ -329,9 +480,7 @@ export default function EditarObraForm({ obra }) {
           </section>
 
           {erro && (
-            <p className="rounded-lg bg-red-50 p-4 text-red-700">
-              {erro}
-            </p>
+            <p className="rounded-lg bg-red-50 p-4 text-red-700">{erro}</p>
           )}
 
           {sucesso && (
@@ -357,6 +506,9 @@ export default function EditarObraForm({ obra }) {
             </Link>
           </div>
         </form>
+        <EtapasObra obraId={obra.id} />
+        <ProgressoMensal obraId={obra.id} />
+        <AtualizacoesObra obraId={obra.id} />
       </div>
     </main>
   );

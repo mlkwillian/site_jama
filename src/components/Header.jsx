@@ -18,7 +18,7 @@ export default function Header({ compact = false }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
-    const isCompact = compact || scrolled;
+  const isCompact = compact || scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -115,21 +115,32 @@ export default function Header({ compact = false }) {
           />
         </Link>
 
-        {/* Desktop */}
-        <nav className="hidden items-center gap-10 lg:flex">
+        {/* Desktop - Menu centralizado na tela */}
+        <nav
+          className="
+    absolute
+    left-[48%]
+    hidden
+    -translate-x-1/2
+    items-center
+    gap-10
+    lg:flex
+  "
+        >
           {links.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={`
-                transition-colors
-                duration-300
-                hover:text-secondary-light
-                ${isCompact
+        whitespace-nowrap
+        transition-colors
+        duration-300
+        hover:text-secondary-light
+        ${isCompact
                   ? "text-white/80"
                   : "text-white"
                 }
-              `}
+      `}
             >
               {item.name}
             </a>

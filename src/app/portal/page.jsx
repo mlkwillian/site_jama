@@ -2,6 +2,7 @@
 import { createClient } from "@/lib/supabase/server";
 import Header from "@/components/Header";
 import ObrasLista from "./ObrasLista";
+import RodapePortal from "./RodapePortal";
 
 export const metadata = {
   title: "Todas as obras | JAMA Fundações",
@@ -48,12 +49,7 @@ export default async function PortalPage() {
       </section>
 
       {/* RODAPÉ */}
-      <footer className="border-t border-[#292929] py-5 text-center">
-        <p className="text-[11px] text-gray-500">
-          Powered by Jama Fundações Technology {new Date().getFullYear()}.
-          Todos os direitos reservados.
-        </p>
-      </footer>
+      <RodapePortal />
 
     </main>
   );
