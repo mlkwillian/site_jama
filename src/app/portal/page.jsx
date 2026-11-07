@@ -1,10 +1,11 @@
 
-import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
+import Header from "@/components/Header";
+import ObrasLista from "./ObrasLista";
 
 export const metadata = {
-  title: "Portfólio de Obras | JAMA Fundações",
-  description: "Acompanhe as obras e projetos da JAMA Fundações.",
+  title: "Todas as obras | JAMA Fundações",
+  description: "Acompanhe o andamento das obras da JAMA Fundações.",
 };
 
 export default async function PortalPage() {
@@ -33,121 +34,27 @@ export default async function PortalPage() {
 
   const listaObras = error ? [] : obras || [];
 
-  const statusLabel = {
-    planejada: "Planejada",
-    em_andamento: "Em andamento",
-    concluida: "Concluída",
-  };
-
   return (
-    <main className="min-h-screen bg-gray-50">
-      <section className="bg-primary px-6 py-20 text-white">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-4 font-semibold uppercase tracking-[0.25em] text-secondary">
-            JAMA Fundações
-          </p>
+    <main className="min-h-screen flex flex-col bg-[#141414] text-white">
 
-          <h1 className="text-4xl font-bold md:text-5xl">
-            Nosso Portfólio de Obras
-          </h1>
+      {/* HEADER PRINCIPAL */}
+      <Header compact />
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-            Acompanhe nossos projetos, conheça nossas realizações
-            e veja de perto a evolução de cada obra.
-          </p>
-        </div>
+      {/* CONTEÚDO */}
+      <section className="mx-auto w-full max-w-[1180px] flex-1 px-6 pb-14 pt-[150px]">
+
+        <ObrasLista obras={listaObras} />
+
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-10">
-          <h2 className="text-3xl font-bold text-primary">
-            Nossas obras
-          </h2>
+      {/* RODAPÉ */}
+      <footer className="border-t border-[#292929] py-5 text-center">
+        <p className="text-[11px] text-gray-500">
+          Powered by Jama Fundações Technology {new Date().getFullYear()}.
+          Todos os direitos reservados.
+        </p>
+      </footer>
 
-          <p className="mt-3 text-gray-500">
-            Conheça os projetos publicados pela JAMA Fundações.
-          </p>
-        </div>
-
-        {listaObras.length === 0 ? (
-          <div className="rounded-2xl border border-gray-200 bg-white px-6 py-16 text-center">
-            <h3 className="text-xl font-bold text-primary">
-              Em breve, novas obras por aqui.
-            </h3>
-
-            <p className="mt-3 text-gray-500">
-              Estamos preparando nosso portfólio para apresentar
-              nossos projetos e realizações.
-            </p>
-          </div>
-        ) : (
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {listaObras.map((obra) => (
-              <article
-                key={obra.id}
-                className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div className="h-56 bg-gray-200">
-                  {obra.capa_url ? (
-                    <img
-                      src={obra.capa_url}
-                      alt={`Fotografia da obra ${obra.nome}`}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center text-gray-400">
-                      Fotografia em breve
-                    </div>
-                  )}
-                </div>
-
-                <div className="p-6">
-                  <span className="text-sm font-semibold text-secondary">
-                    {statusLabel[obra.status] || obra.status}
-                  </span>
-
-                  <h3 className="mt-2 text-xl font-bold text-primary">
-                    {obra.nome}
-                  </h3>
-
-                  <p className="mt-2 text-sm text-gray-500">
-                    {obra.cidade} - {obra.estado}
-                  </p>
-
-                  <p className="mt-4 line-clamp-3 text-gray-600">
-                    {obra.descricao || "Conheça os detalhes deste projeto."}
-                  </p>
-
-                  <div className="mt-6">
-                    <div className="mb-2 flex justify-between text-sm">
-                      <span className="text-gray-500">Andamento</span>
-                      <strong className="text-primary">
-                        {obra.percentual}%
-                      </strong>
-                    </div>
-
-                    <div className="h-2 overflow-hidden rounded-full bg-gray-200">
-                      <div
-                        className="h-full rounded-full bg-secondary"
-                        style={{
-                          width: `${obra.percentual}%`,
-                        }}
-                      />
-                    </div>
-                  </div>
-
-                  <Link
-                    href={`/portal/${obra.slug}`}
-                    className="mt-6 flex items-center justify-center rounded-xl bg-secondary px-5 py-3 font-bold text-white transition hover:brightness-110"
-                  >
-                    Ver detalhes da obra
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        )}
-      </section>
     </main>
   );
 }
