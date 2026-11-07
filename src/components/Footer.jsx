@@ -162,178 +162,186 @@ export default function Footer() {
 
 
               <li>
+                <button
+                onClick={() => setCareersOpen(true)}
+                className="text-white/60 hover:text-secondary transition"
+              >
+                <Link
+                  href="/portal">
                 {t.institutional.clientPortal}
-              </li>
-
-              <li>
-                <button
-                  onClick={() => setCareersOpen(true)}
-                  className="text-white/60 hover:text-secondary transition"
-                >
-                  {t.institutional.careers}
-                </button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <Dialog open={careersOpen} onOpenChange={setCareersOpen}>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>{t.careers.title}</DialogTitle>
-              </DialogHeader>
-              <p className="text-sm text-black/60">
-                {t.careers.description}
-              </p>
-
-              <form onSubmit={handleWhatsApp} className="space-y-4">
-                <input
-                  name="name"
-                  placeholder={t.careers.placeholder.name}
-                  required
-                  className="w-full rounded-lg border p-3"
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  placeholder={t.careers.placeholder.email}
-                  required
-                  className="w-full rounded-lg border p-3"
-                />
-
-                <input
-                  name="phone"
-                  placeholder={t.careers.placeholder.phone}
-                  className="w-full rounded-lg border p-3"
-                />
-
-                <textarea
-                  name="message"
-                  placeholder={t.careers.placeholder.message}
-                  className="w-full rounded-lg border p-3"
-                />
-
-                <button
-                  type="submit"
-                  className="w-full rounded-lg bg-secondary py-3 text-white font-semibold hover:bg-secondary-hover"
-                >
-                  {t.careers.button}
-                </button>
-              </form>
-            </DialogContent>
-          </Dialog>
-
-          <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
-            <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle>
-                  {t.privacy.title}
-                </DialogTitle>
-              </DialogHeader>
-
-              <p className="text-sm text-muted-foreground">
-                {t.privacy.intro}
-              </p>
-
-              <div className="space-y-6 mt-6">
-                {t.privacy.sections.map((section) => (
-                  <section key={section.title}>
-                    <h3 className="font-semibold text-primary">
-                      {section.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm text-black/70 leading-7">
-                      {section.text}
-                    </p>
-                  </section>
-                ))}
-              </div>
-            </DialogContent>
-          </Dialog>
+              </Link></button>
+            </li>
 
 
+            <li>
+              <button
+                onClick={() => setCareersOpen(true)}
+                className="text-white/60 hover:text-secondary transition"
+              >
+                {t.institutional.careers}
+              </button>
+            </li>
 
-          {/* Contato */}
-          <div>
+          </ul>
 
-            <h3 className="text-lg font-semibold">
-              {t.contact.title}
-            </h3>
+        </div>
 
+        <Dialog open={careersOpen} onOpenChange={setCareersOpen}>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>{t.careers.title}</DialogTitle>
+            </DialogHeader>
+            <p className="text-sm text-black/60">
+              {t.careers.description}
+            </p>
 
-            <div className="mt-6 space-y-6">
+            <form onSubmit={handleWhatsApp} className="space-y-4">
+              <input
+                name="name"
+                placeholder={t.careers.placeholder.name}
+                required
+                className="w-full rounded-lg border p-3"
+              />
 
+              <input
+                type="email"
+                name="email"
+                placeholder={t.careers.placeholder.email}
+                required
+                className="w-full rounded-lg border p-3"
+              />
 
-              <div className="flex gap-3">
+              <input
+                name="phone"
+                placeholder={t.careers.placeholder.phone}
+                className="w-full rounded-lg border p-3"
+              />
 
-                <Phone
-                  className="mt-1 text-secondary-light"
-                  size={18}
-                />
+              <textarea
+                name="message"
+                placeholder={t.careers.placeholder.message}
+                className="w-full rounded-lg border p-3"
+              />
 
-                <span className="text-white/60">
-                  (11) 94143-6113
-                </span>
+              <button
+                type="submit"
+                className="w-full rounded-lg bg-secondary py-3 text-white font-semibold hover:bg-secondary-hover"
+              >
+                {t.careers.button}
+              </button>
+            </form>
+          </DialogContent>
+        </Dialog>
 
-              </div>
+        <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
+          <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle>
+                {t.privacy.title}
+              </DialogTitle>
+            </DialogHeader>
+
+            <p className="text-sm text-muted-foreground">
+              {t.privacy.intro}
+            </p>
+
+            <div className="space-y-6 mt-6">
+              {t.privacy.sections.map((section) => (
+                <section key={section.title}>
+                  <h3 className="font-semibold text-primary">
+                    {section.title}
+                  </h3>
+
+                  <p className="mt-2 text-sm text-black/70 leading-7">
+                    {section.text}
+                  </p>
+                </section>
+              ))}
+            </div>
+          </DialogContent>
+        </Dialog>
 
 
 
-              <div className="flex gap-3">
+        {/* Contato */}
+        <div>
 
-                <Mail
-                  className="mt-1 text-secondary-light"
-                  size={18}
-                />
-
-                <span className="text-white/60">
-                  jomacelpereiradossantos@gmail.com
-                </span>
-
-              </div>
+          <h3 className="text-lg font-semibold">
+            {t.contact.title}
+          </h3>
 
 
+          <div className="mt-6 space-y-6">
 
 
-              <div className="flex gap-3">
+            <div className="flex gap-3">
 
-                <MapPin
-                  className="mt-1 text-secondary-light"
-                  size={18}
-                />
+              <Phone
+                className="mt-1 text-secondary-light"
+                size={18}
+              />
 
-                <span className="text-white/60">
-                  Rua souza coutinho, 384, Sacomã
-                  <br />
-                  São Paulo - SP
-                </span>
+              <span className="text-white/60">
+                (11) 94143-6113
+              </span>
 
-              </div>
+            </div>
+
+
+
+            <div className="flex gap-3">
+
+              <Mail
+                className="mt-1 text-secondary-light"
+                size={18}
+              />
+
+              <span className="text-white/60">
+                jomacelpereiradossantos@gmail.com
+              </span>
+
+            </div>
+
+
+
+
+            <div className="flex gap-3">
+
+              <MapPin
+                className="mt-1 text-secondary-light"
+                size={18}
+              />
+
+              <span className="text-white/60">
+                Rua souza coutinho, 384, Sacomã
+                <br />
+                São Paulo - SP
+              </span>
 
             </div>
 
           </div>
 
-
-          <Image
-            src={`${basePath}/images/footer-image.png`}
-            alt="JAMA Fundações"
-            width={250}
-            height={80}
-            className="w-40 md:w-52 h-auto opacity-90 rounded-[32px] hover:opacity-100 transition"
-          />
-
         </div>
 
 
+        <Image
+          src={`${basePath}/images/footer-image.png`}
+          alt="JAMA Fundações"
+          width={250}
+          height={80}
+          className="w-40 md:w-52 h-auto opacity-90 rounded-[32px] hover:opacity-100 transition"
+        />
+
+      </div>
 
 
 
-        {/* Rodapé inferior */}
-        <div
-          className="
+
+
+      {/* Rodapé inferior */}
+      <div
+        className="
             mt-16
             flex
             flex-col
@@ -347,23 +355,23 @@ export default function Footer() {
             text-white/40
             lg:flex-row
           "
-        >
+      >
 
-          <p>
-            © {new Date().getFullYear()} {t.copyright}
-          </p>
+        <p>
+          © {new Date().getFullYear()} {t.copyright}
+        </p>
 
-
-
-
-
-        </div>
 
 
 
 
       </div>
 
-    </footer>
+
+
+
+    </div>
+
+    </footer >
   );
 }
