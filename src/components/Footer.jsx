@@ -163,7 +163,7 @@ export default function Footer() {
 
               <li>
                 <button
-                onClick={() => setCareersOpen(true)}
+                
                 className="text-white/60 hover:text-secondary transition"
               >
                 <Link
