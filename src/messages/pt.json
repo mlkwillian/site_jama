@@ -38,38 +38,44 @@
     }
   },
   "services": {
-    "badge": "Serviços",
-    "title": "Soluções completas em fundações para qualquer porte de obra.",
-    "description": "Atuamos desde o planejamento até a execução, utilizando soluções eficientes e equipes altamente qualificadas para garantir segurança, qualidade e produtividade.",
-    "button": "Solicitar orçamento",
-    "learnMore": "Saiba mais",
-    "items": [
-      {
-        "title": "Fundação industrial",
-        "description": "Execução de fundações para estruturas industriais conforme especificação de projeto."
-      },
-      {
-        "title": "Terraplanagem",
-        "description": "Demolição e movimentação de terra com planejamento e controle de execução."
-      },
-      {
-        "title": "Galpão industrial",
-        "description": "Galpões metálicos conforme projeto estrutural."
-      },
-      {
-        "title": "Instalação de pontes rolantes",
-        "description": "Instalação de pontes rolantes com eficiência e confiabilidade."
-      },
-      {
-        "title": "Projetos estruturais",
-        "description": "Projetos estruturais conforme normas técnicas e requisitos do empreendimento."
-      },
-      {
-        "title": "Instalações eletricas e Hidráulicas",
-        "description": "Instalações elétricas e hidráulicas com qualidade e segurança."
-      }
-    ]
-  },
+  "badge": "Serviços",
+  "title": "Soluções completas em fundações para qualquer porte de obra.",
+  "description": "Atuamos desde o planejamento até a execução, utilizando soluções eficientes e equipes altamente qualificadas para garantir segurança, qualidade e produtividade.",
+  "button": "Solicitar orçamento",
+  "learnMore": "Saiba mais",
+  "items": [
+    {
+      "title": "Fundação industrial",
+      "description": "Execução de fundações para estruturas industriais conforme especificação de projeto.",
+      "details": "Executamos fundações industriais com foco em resistência, estabilidade e precisão técnica. Desenvolvemos soluções de acordo com as características do solo, as cargas estruturais e as necessidades de cada empreendimento, garantindo uma base segura e confiável para sua construção."
+    },
+    {
+      "title": "Terraplanagem",
+      "description": "Demolição e movimentação de terra com planejamento e controle de execução.",
+      "details": "Realizamos serviços de terraplanagem, preparação e nivelamento de terrenos, cortes, aterros e movimentação de solo. Trabalhamos com planejamento e equipamentos adequados para proporcionar as condições ideais de execução, aproveitamento da área e segurança em todas as etapas da obra."
+    },
+    {
+      "title": "Galpão industrial",
+      "description": "Galpões metálicos conforme projeto estrutural.",
+      "details": "Desenvolvemos soluções para construção e montagem de galpões industriais, seguindo as especificações dos projetos estruturais. Nosso trabalho busca oferecer estruturas resistentes, funcionais e adequadas às necessidades de cada operação, considerando aproveitamento de espaço, durabilidade e eficiência."
+    },
+    {
+      "title": "Instalação de pontes rolantes",
+      "description": "Instalação de pontes rolantes com eficiência e confiabilidade.",
+      "details": "Executamos serviços de instalação e montagem de pontes rolantes, considerando os requisitos técnicos, estruturais e operacionais de cada ambiente industrial. Priorizamos o alinhamento, a segurança e a confiabilidade dos sistemas, contribuindo para a movimentação eficiente de cargas e materiais."
+    },
+    {
+      "title": "Projetos estruturais",
+      "description": "Projetos estruturais conforme normas técnicas e requisitos do empreendimento.",
+      "details": "Elaboramos soluções estruturais considerando as características e necessidades de cada empreendimento. Os projetos são desenvolvidos com atenção à segurança, funcionalidade, dimensionamento e atendimento às normas técnicas aplicáveis, buscando otimizar materiais e garantir eficiência construtiva."
+    },
+    {
+      "title": "Instalações elétricas e hidráulicas",
+      "description": "Instalações elétricas e hidráulicas com qualidade e segurança.",
+      "details": "Realizamos instalações elétricas e hidráulicas para ambientes industriais e comerciais, seguindo os requisitos técnicos de cada projeto. Trabalhamos para garantir funcionalidade, organização, segurança e eficiência dos sistemas, desde a infraestrutura até a execução das instalações."
+    }
+  ]
+},
   "mission": {
     "badge": "Quem Somos",
     "title": "Engenharia de fundações baseada em confiança, experiência e inovação.",

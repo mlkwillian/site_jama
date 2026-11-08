@@ -38,38 +38,44 @@
     }
   },
   "services": {
-    "badge": "Services",
-    "title": "Complete foundation solutions for projects of any size.",
-    "description": "We operate from planning to execution, using efficient solutions and highly qualified teams to guarantee safety, quality, and productivity.",
-    "button": "Request a Quote",
-    "learnMore": "Learn More",
-    "items": [
-      {
-        "title": "Industrial foundation",
-        "description": "Execution of foundations for industrial structures according to project specifications."
-      },
-      {
-        "title": "Earthworks",
-        "description": "Demolition and earthmoving with planning and execution control."
-      },
-      {
-        "title": "Industrial warehouse",
-        "description": "Metal sheds according to structural design."
-      },
-      {
-        "title": "Installation of overhead traveling cranes",
-        "description": "Installation of overhead traveling cranes with efficiency and reliability."
-      },
-      {
-        "title": "Structural projects",
-        "description": "Structural designs in accordance with technical standards and project requirements."
-      },
-      {
-        "title": "Electrical and Plumbing Installations",
-        "description": "Electrical and plumbing installations with quality and safety."
-      }
-    ]
-  },
+  "badge": "Services",
+  "title": "Complete foundation solutions for projects of any size.",
+  "description": "We operate from planning to execution, using efficient solutions and highly qualified teams to guarantee safety, quality, and productivity.",
+  "button": "Request a Quote",
+  "learnMore": "Learn More",
+  "items": [
+    {
+      "title": "Industrial Foundations",
+      "description": "Execution of foundations for industrial structures according to project specifications.",
+      "details": "We execute industrial foundation projects with a focus on strength, stability, and technical precision. We develop solutions based on soil conditions, structural loads, and the specific requirements of each project, ensuring a safe and reliable foundation for your construction."
+    },
+    {
+      "title": "Earthworks",
+      "description": "Demolition and earthmoving with planning and execution control.",
+      "details": "We provide earthworks services, including site preparation, land leveling, excavation, filling, and soil movement. Through careful planning and the use of appropriate equipment, we ensure ideal site conditions, efficient use of space, and safety throughout every stage of the project."
+    },
+    {
+      "title": "Industrial Warehouses",
+      "description": "Metal structures built according to structural engineering designs.",
+      "details": "We develop solutions for the construction and assembly of industrial warehouses, following structural engineering specifications. Our goal is to deliver durable, strong, and functional structures tailored to each operation, considering space optimization, long-term performance, and construction efficiency."
+    },
+    {
+      "title": "Overhead Crane Installation",
+      "description": "Installation of overhead cranes with efficiency and reliability.",
+      "details": "We carry out overhead crane installation and assembly, taking into account the technical, structural, and operational requirements of each industrial environment. We prioritize proper alignment, safety, and system reliability, contributing to the efficient handling and movement of loads and materials."
+    },
+    {
+      "title": "Structural Engineering Projects",
+      "description": "Structural designs in accordance with technical standards and project requirements.",
+      "details": "We develop structural engineering solutions based on the characteristics and requirements of each project. Our designs focus on safety, functionality, accurate structural sizing, and compliance with applicable technical standards, while optimizing materials and ensuring construction efficiency."
+    },
+    {
+      "title": "Electrical and Plumbing Installations",
+      "description": "Electrical and plumbing installations with quality and safety.",
+      "details": "We provide electrical and plumbing installation services for industrial and commercial environments, following the technical requirements of each project. Our work focuses on functionality, organization, safety, and system efficiency, from infrastructure preparation to final installation."
+    }
+  ]
+},
   "mission": {
     "badge": "About Us",
     "title": "Foundation engineering built on trust, experience and innovation.",
