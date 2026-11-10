@@ -368,9 +368,16 @@
       "images": [
           "/images/equipment/caminhao.jpeg",
           "/images/equipment/caminhao2.jpeg",
+           "/images/equipment/retro3.jpeg",
+          "/images/equipment/retro4.jpeg",
+          "/images/equipment/retro5.jpeg",
           "/images/equipment/caminhao3.jpeg",
           "/images/equipment/caminhao4.jpeg",
           "/images/equipment/caminhao5.jpeg",
+          "/images/equipment/container.jpeg",
+          "/images/equipment/retro1.jpeg",
+          "/images/equipment/retro2.jpeg",
+          "/images/equipment/retro6.jpeg",
           "/images/equipment/carro1.jpeg",
           "/images/equipment/carro2.jpeg",
           "/images/equipment/carro3.jpeg",
@@ -391,13 +398,7 @@
           "/images/equipment/carro18.jpeg",
           "/images/equipment/carro19.jpeg",
           "/images/equipment/carro20.jpeg",
-          "/images/equipment/container.jpeg",
-          "/images/equipment/retro1.jpeg",
-          "/images/equipment/retro2.jpeg",
-          "/images/equipment/retro3.jpeg",
-          "/images/equipment/retro4.jpeg",
-          "/images/equipment/retro5.jpeg",
-          "/images/equipment/retro6.jpeg",
+          
           "/images/equipment/retro7.jpeg"
         ]
     }
