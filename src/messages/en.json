@@ -82,7 +82,7 @@
     "description": "Jama Fundações operates on small, medium and large-scale projects, providing complete deep foundation solutions. Our team combines technical expertise, modern equipment and strategic planning to deliver safe and efficient results.",
     "card": {
       "subtitle": "Commitment to Engineering",
-      "years": "10+ Years",
+      "years": "15+ Years",
       "description": "Building solid foundations for major projects."
     },
     "button": "Talk to Our Team",
@@ -350,7 +350,7 @@
     ]
   },"equipment": {
  "badge": "Nossa estrutura",
-  "title": "Máquinas e Equipamentos",
+  "title": "Máquinas e Frota de veículos",
   "description":
     "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
   "button": "Solicite um orçamento",
@@ -358,53 +358,47 @@
 
   "items": [
     {
-      "title": "Perfuratriz Hidráulica",
-      "category": "Perfuração",
+      "title": "Frota de veículos",
+      "category": "veiculos",
       "description":
-        "Equipamento utilizado na execução de estacas e fundações profundas.",
+        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
       "application": "Execução de fundações",
       "images": [
-          "/images/equipment/retro1.jpeg",
-          "/images/equipment/retro2.jpeg",
-          "/images/equipment/retro3.jpeg"
-        ]
-    },
-    {
-      "title": "Escavadeira Hidráulica",
-      "category": "Escavação",
-      "description":
-        "Equipamento de alto desempenho para movimentação de solo e escavações.",
-      "application": "Movimentação de terra",
-      "images": [
-          "/images/equipment/caminhao1.jpeg",
+          "/images/equipment/caminhao.jpeg",
           "/images/equipment/caminhao2.jpeg",
-          "/images/equipment/caminhao3.jpeg"
-        ]
-    },
-    {
-      "title": "Guindaste",
-      "category": "Elevação",
-      "description":
-        "Equipamento destinado à movimentação e elevação de cargas pesadas.",
-      "application": "Içamento de cargas",
-      "images": [
-          "/images/equipment/container.jpeg",
-          "/images/equipment/carro5.jpeg",
-          "/images/equipment/carro4.jpeg"
-        ]
-    },
-    {
-  "title": "Frota de Transporte",
-  "category": "Translado",
-  "description": "Contamos com uma frota preparada para garantir o transporte seguro e eficiente de máquinas, equipamentos e materiais até os locais de operação.",
-  "application": "Transporte e logística de equipamentos",
-  "images": [
+          "/images/equipment/caminhao3.jpeg",
+          "/images/equipment/caminhao4.jpeg",
+          "/images/equipment/caminhao5.jpeg",
           "/images/equipment/carro1.jpeg",
           "/images/equipment/carro2.jpeg",
-          "/images/equipment/carro3.jpeg"
+          "/images/equipment/carro3.jpeg",
+          "/images/equipment/carro4.jpeg",
+          "/images/equipment/carro5.jpeg",
+          "/images/equipment/carro6.jpeg",
+          "/images/equipment/carro7.jpeg",
+          "/images/equipment/carro8.jpeg",
+          "/images/equipment/carro9.jpeg",
+          "/images/equipment/carro10.jpeg",
+          "/images/equipment/carro11.jpeg",
+          "/images/equipment/carro12.jpeg",
+          "/images/equipment/carro13.jpeg",
+          "/images/equipment/carro14.jpeg",
+          "/images/equipment/carro15.jpeg",
+          "/images/equipment/carro16.jpeg",
+          "/images/equipment/carro17.jpeg",
+          "/images/equipment/carro18.jpeg",
+          "/images/equipment/carro19.jpeg",
+          "/images/equipment/carro20.jpeg",
+          "/images/equipment/container.jpeg",
+          "/images/equipment/retro1.jpeg",
+          "/images/equipment/retro2.jpeg",
+          "/images/equipment/retro3.jpeg",
+          "/images/equipment/retro4.jpeg",
+          "/images/equipment/retro5.jpeg",
+          "/images/equipment/retro6.jpeg",
+          "/images/equipment/retro7.jpeg"
         ]
-}
-  
+    }
   ]
 }
 

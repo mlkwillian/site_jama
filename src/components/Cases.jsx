@@ -154,21 +154,7 @@ export default function Cases() {
                 </p>
 
 
-                <button
-                  className="
-                    mt-8
-                    flex
-                    items-center
-                    gap-2
-                    font-semibold
-                    text-secondary
-                    transition-all
-                    group-hover:gap-4
-                  "
-                >
-                  {t.detailsButton}
-                  <ArrowRight size={18} />
-                </button>
+              
 
               </div>
 
