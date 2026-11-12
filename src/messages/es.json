@@ -48,7 +48,8 @@
     {
       "title": "Cimentación industrial",
       "description": "Ejecución de cimentaciones para estructuras industriales según las especificaciones del proyecto.",
-      "details": "Ejecutamos cimentaciones industriales con un enfoque en la resistencia, estabilidad y precisión técnica. Desarrollamos soluciones de acuerdo con las características del suelo, las cargas estructurales y las necesidades de cada proyecto, garantizando una base segura y confiable para su construcción."
+      "details": "Realizamos cimentaciones industriales priorizando la resistencia, la estabilidad y la precisión técnica. Desarrollamos soluciones adaptadas a las características del suelo y a las necesidades de cada proyecto, garantizando una base segura y fiable para su construcción."
+
     },
     {
       "title": "Movimiento de tierras",
@@ -65,16 +66,17 @@
       "description": "Instalación de puentes grúa con eficiencia y confiabilidad.",
       "details": "Ejecutamos trabajos de instalación y montaje de puentes grúa, teniendo en cuenta los requisitos técnicos, estructurales y operativos de cada entorno industrial. Priorizamos la alineación, la seguridad y la confiabilidad de los sistemas, contribuyendo al movimiento eficiente de cargas y materiales."
     },
-    {
-      "title": "Proyectos estructurales",
-      "description": "Proyectos estructurales conforme a las normas técnicas y los requisitos del proyecto.",
-      "details": "Desarrollamos soluciones estructurales teniendo en cuenta las características y necesidades de cada proyecto. Los diseños se elaboran prestando especial atención a la seguridad, funcionalidad, dimensionamiento y cumplimiento de las normas técnicas aplicables, buscando optimizar los materiales y garantizar la eficiencia constructiva."
-    },
-    {
-      "title": "Instalaciones eléctricas e hidráulicas",
-      "description": "Instalaciones eléctricas e hidráulicas con calidad y seguridad.",
-      "details": "Realizamos instalaciones eléctricas e hidráulicas para entornos industriales y comerciales, siguiendo los requisitos técnicos de cada proyecto. Trabajamos para garantizar la funcionalidad, organización, seguridad y eficiencia de los sistemas, desde la infraestructura hasta la ejecución de las instalaciones."
-    }
+    { "title": "Proyectos Estructurales",
+"description": "Proyectos estructurales conforme a las normas técnicas y especificaciones de cada obra.",
+"details": "Desarrollamos soluciones estructurales considerando las características y necesidades de cada proyecto. Los proyectos se desarrollan prestando atención a la seguridad, la funcionalidad, el dimensionamiento y el cumplimiento de las normas técnicas aplicables, buscando optimizar los materiales y garantizar la eficiencia constructiva."
+
+},
+
+{ "title": "Instalaciones de sistemas eléctricos, hidráulicos y de protección contra incendios",
+"description": "Instalaciones de sistemas eléctricos, hidráulicos y de protección contra incendios con calidad y seguridad.",
+"details": "Realizamos instalaciones eléctricas e hidráulicas para entornos industriales y comerciales, siguiendo los requisitos técnicos de cada proyecto. Trabajamos para garantizar la funcionalidad, la organización, la seguridad y la eficiencia de los sistemas, desde la infraestructura hasta la ejecución de las instalaciones."
+
+}
   ]
 },
   "mission": {

@@ -47,7 +47,7 @@
     {
       "title": "Fundação industrial",
       "description": "Execução de fundações para estruturas industriais conforme especificação de projeto.",
-      "details": "Executamos fundações industriais com foco em resistência, estabilidade e precisão técnica. Desenvolvemos soluções de acordo com as características do solo, as cargas estruturais e as necessidades de cada empreendimento, garantindo uma base segura e confiável para sua construção."
+      "details": "Executamos fundações industriais com foco em resistência, estabilidade e precisão técnica. Desenvolvemos soluções de acordo com as características do solo e as necessidades de cada projeto, garantindo uma base segura e confiável para sua construção."
     },
     {
       "title": "Terraplanagem",
@@ -66,12 +66,12 @@
     },
     {
       "title": "Projetos estruturais",
-      "description": "Projetos estruturais conforme normas técnicas e requisitos do empreendimento.",
-      "details": "Elaboramos soluções estruturais considerando as características e necessidades de cada empreendimento. Os projetos são desenvolvidos com atenção à segurança, funcionalidade, dimensionamento e atendimento às normas técnicas aplicáveis, buscando otimizar materiais e garantir eficiência construtiva."
+      "description": "Projetos estrururais conforme normas técnicas e especificaçoes de cada obra.",
+      "details": "Elaboramos soluções estruturais considerando as características e necessidades de cada projeto. Os projetos são desenvolvidos com atenção à segurança, funcionalidade, dimensionamento e atendimento às normas técnicas aplicáveis, buscando otimizar materiais e garantir eficiência construtiva."
     },
     {
-      "title": "Instalações elétricas e hidráulicas",
-      "description": "Instalações elétricas e hidráulicas com qualidade e segurança.",
+      "title": "Instalações elétricas, hidráulicas e sistema de bombeiro",
+      "description": "Instalações elétricas, hidráulicas e sistema de bombeiro com qualidade e segurança.",
       "details": "Realizamos instalações elétricas e hidráulicas para ambientes industriais e comerciais, seguindo os requisitos técnicos de cada projeto. Trabalhamos para garantir funcionalidade, organização, segurança e eficiência dos sistemas, desde a infraestrutura até a execução das instalações."
     }
   ]

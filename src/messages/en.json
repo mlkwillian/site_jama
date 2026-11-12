@@ -47,7 +47,7 @@
     {
       "title": "Industrial Foundations",
       "description": "Execution of foundations for industrial structures according to project specifications.",
-      "details": "We execute industrial foundation projects with a focus on strength, stability, and technical precision. We develop solutions based on soil conditions, structural loads, and the specific requirements of each project, ensuring a safe and reliable foundation for your construction."
+      "details": "We execute industrial foundations with a focus on strength, stability, and technical precision. We develop solutions according to soil characteristics and the needs of each project, guaranteeing a safe and reliable base for your construction."
     },
     {
       "title": "Earthworks",
@@ -65,15 +65,16 @@
       "details": "We carry out overhead crane installation and assembly, taking into account the technical, structural, and operational requirements of each industrial environment. We prioritize proper alignment, safety, and system reliability, contributing to the efficient handling and movement of loads and materials."
     },
     {
-      "title": "Structural Engineering Projects",
-      "description": "Structural designs in accordance with technical standards and project requirements.",
-      "details": "We develop structural engineering solutions based on the characteristics and requirements of each project. Our designs focus on safety, functionality, accurate structural sizing, and compliance with applicable technical standards, while optimizing materials and ensuring construction efficiency."
-    },
-    {
-      "title": "Electrical and Plumbing Installations",
-      "description": "Electrical and plumbing installations with quality and safety.",
-      "details": "We provide electrical and plumbing installation services for industrial and commercial environments, following the technical requirements of each project. Our work focuses on functionality, organization, safety, and system efficiency, from infrastructure preparation to final installation."
-    }
+"title": "Structural Projects",
+"description": "Structural projects according to technical standards and specifications of each work.",
+"details": "We develop structural solutions considering the characteristics and needs of each project. The projects are developed with attention to safety, functionality, dimensioning and compliance with applicable technical standards, seeking to optimize materials and ensure constructive efficiency."
+},
+
+{
+"title": "Electrical, hydraulic and fire protection system installations",
+"description": "Electrical, hydraulic and fire protection system installations with quality and safety.",
+"details": "We carry out electrical and hydraulic installations for industrial and commercial environments, following the technical requirements of each project. We work to ensure functionality, organization, safety and efficiency of the systems, from infrastructure to the execution of the installations."
+}
   ]
 },
   "mission": {
