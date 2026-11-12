@@ -64,13 +64,15 @@ export default function Mission() {
             {/* Card */}
             <div
               className="
-                absolute
-                bottom-8
-                left-8
-                rounded-2xl
-                bg-white
-                p-6
-                shadow-xl
+  absolute
+  bottom-3
+  left-1/2
+  -translate-x-1/2
+  rounded-2xl
+  bg-white
+  p-6
+  shadow-xl
+w-[80%]
               "
             >
 

@@ -21,7 +21,7 @@ const geistMono = Geist({
 });
 
 export const metadata = {
-  title: "JAMA Fundações",
+  title: "JAMA FUNDAÇÕES",
   description: "JAMA Fundações Engenharia Industrial",
 };
 

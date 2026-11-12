@@ -319,25 +319,25 @@
     "cardDescription": "Ejecución de cimentaciones con altos estándares técnicos, equipo especializado y seguimiento completo de la obra.",
     "items": [
       {
-        "image": "/images/cases/case-1.jpeg",
+        "image": "/images/cases/case1.jpeg",
         "title": "Cimentación industrial N.º 170",
         "city": "Valença • RJ",
         "description": "Cimentación para una línea de corte transversal de 2000 x 25 mm, equipo esencial en la industria del acero, responsable de cortar bobinas en chapas con alta precisión y productividad."
       },
       {
-        "image": "/images/cases/case-2.jpeg",
+        "image": "/images/cases/case2.jpeg",
         "title": "Cimentación industrial N.º 168",
         "city": "Betim • MG",
         "description": "Cimentación finalizada para la instalación de una máquina de corte transversal de 2000 x 25 mm."
       },
       {
-        "image": "/images/cases/case-3.jpeg",
+        "image": "/images/cases/case3.jpeg",
         "title": "Nave industrial",
         "city": "Ipiranga • SP",
         "description": "Nave industrial con 6.100 m² de área construida, incluyendo cimentación e instalación del sistema contra incendios."
       },
       {
-        "image": "/images/cases/case-4.jpeg",
+        "image": "/images/cases/case4.jpeg",
         "title": "Nave industrial",
         "city": "Volta Redonda • RJ",
         "description": "Nave con estructura preparada para puentes grúa de 5/10/20 toneladas."
@@ -359,6 +359,7 @@
         "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
       "application": "Execução de fundações",
       "images": [
+                  "/images/equipment/carro20.jpeg",
           "/images/equipment/caminhao.jpeg",
           "/images/equipment/caminhao2.jpeg",
            "/images/equipment/retro3.jpeg",
@@ -390,7 +391,6 @@
           "/images/equipment/carro17.jpeg",
           "/images/equipment/carro18.jpeg",
           "/images/equipment/carro19.jpeg",
-          "/images/equipment/carro20.jpeg",
           
           "/images/equipment/retro7.jpeg"
         ]

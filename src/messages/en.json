@@ -325,25 +325,25 @@
     "cardDescription": "Foundation work executed with high technical standards, a specialized team, and comprehensive project supervision.",
         "items": [
       {
-        "image": "/images/cases/case-1.jpeg",
+        "image": "/images/cases/case1.jpeg",
         "title": "Industrial foundation N° 170",
         "city": "Valença • RJ",
         "description":"Foundation for a 2000 x 25mm cross-cutting line – essential equipment in the steel industry, responsible for cutting coils into sheets with high precision and productivity."
       },
       {
-        "image": "/images/cases/case-2.jpeg",
+        "image": "/images/cases/case2.jpeg",
         "title": "Industrial foundation N° 168",
         "city": "Betim • MG",
         "description":"Foundation completed for installation of a 2000x25mm cross-cutting machine."
       },
       {
-        "image": "/images/cases/case-3.jpeg",
+        "image": "/images/cases/case3.jpeg",
         "title": "Industrial warehouse",
         "city": "Ipiranga  • SP",
         "description":"Industrial warehouse with 6,100m² of constructed area, including foundation and fire suppression system installation."
       },
       {
-        "image": "/images/cases/case-4.jpeg",
+        "image": "/images/cases/case4.jpeg",
         "title": "Industrial warehouse",
         "city": "Volta Redonda • RJ",
         "description":"Warehouse with structure for 5/10/20 inch overhead cranes."
@@ -365,6 +365,7 @@
         "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
       "application": "Execução de fundações",
       "images": [
+                  "/images/equipment/carro20.jpeg",
           "/images/equipment/caminhao.jpeg",
           "/images/equipment/caminhao2.jpeg",
            "/images/equipment/retro3.jpeg",
@@ -396,8 +397,6 @@
           "/images/equipment/carro17.jpeg",
           "/images/equipment/carro18.jpeg",
           "/images/equipment/carro19.jpeg",
-          "/images/equipment/carro20.jpeg",
-          
           "/images/equipment/retro7.jpeg"
         ]
     }
