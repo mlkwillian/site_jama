@@ -80,6 +80,8 @@ const textos = {
     currentStage: "Etapa atual",
     footerTitle: "Grandes projetos exigem grandes bases.",
     footerText: "Esta obra tem a qualidade da JAMA Fundações.",
+    comingSoon: "EM BREVE",
+    comingSoonDetail: "O modelo 3D estará disponível em breve.",
   },
   en: {
     allWorks: "All projects",
@@ -141,8 +143,10 @@ const textos = {
     currentStage: "Current stage",
     footerTitle: "Great projects require strong foundations.",
     footerText: "This project carries the quality of JAMA Foundations.",
+    comingSoon: "COMING SOON",
+    comingSoonDetail: "The 3D model will be available soon.",
   },
-    es: {
+  es: {
     allWorks: "Todas las obras",
     work: "Obra",
     heroEyebrow: "JAMA CIMENTACIONES · SEGUIMIENTO DE OBRA",
@@ -202,6 +206,8 @@ const textos = {
     currentStage: "Etapa actual",
     footerTitle: "Los grandes proyectos necesitan grandes cimientos.",
     footerText: "Esta obra cuenta con la calidad de JAMA Cimentaciones.",
+    comingSoon: "PRÓXIMAMENTE",
+    comingSoonDetail: "El modelo 3D estará disponible pronto.",
   },
 };
 
@@ -257,12 +263,49 @@ export default function ObraDashboard({
 }) {
   const { locale } = useLanguage();
   const t = textos[locale] || textos.pt;
+
+
+  if (!obra) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-[#111111] px-4 pt-[110px] text-zinc-100">
+        <div className="flex max-w-md flex-col items-center text-center">
+
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/10">
+            <Clock3 size={30} className="text-emerald-500" />
+          </div>
+
+          <h1 className="mt-5 text-2xl font-bold tracking-[0.2em]">
+            {t.comingSoon}
+          </h1>
+
+          <p className="mt-2 text-sm text-zinc-500">
+            {t.comingSoonDetail}
+          </p>
+
+          <div className="mt-5 h-1 w-20 overflow-hidden rounded-full bg-zinc-800">
+            <div className="h-full w-1/2 rounded-full bg-emerald-500" />
+          </div>
+
+          <Link
+            href="/portal"
+            className="mt-7 inline-flex items-center gap-2 text-sm text-emerald-500 transition hover:text-emerald-400"
+          >
+            <ArrowLeft size={15} />
+            {t.allWorks}
+          </Link>
+
+        </div>
+      </main>
+    );
+  }
+
+
   const localeData =
-  locale === "en"
-    ? "en-US"
-    : locale === "es"
-      ? "es-ES"
-      : "pt-BR";
+    locale === "en"
+      ? "en-US"
+      : locale === "es"
+        ? "es-ES"
+        : "pt-BR";
 
   const percentual = Math.min(100, Math.max(0, Number(obra.percentual) || 0));
   const dias = diasSemAcidentes(obra.data_ultimo_acidente);
@@ -285,88 +328,87 @@ export default function ObraDashboard({
   return (
     <main className="min-h-screen bg-[#111111] text-zinc-100 pt-[110px]">
       <div className="mx-auto max-w-[1440px] px-4 pb-12 pt-5 sm:px-6 lg:px-8">
-        
-<div>
-  <div className="mb-2">
-    <Link
-      href="/portal"
-      className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-500 underline-offset-4 transition hover:text-emerald-400"
-    >
-      <ArrowLeft size={13} />
-      {t.allWorks}
-    </Link>
-  </div>
 
-  <header className="relative flex min-h-[126px] items-center justify-center overflow-hidden rounded-xl border border-white/[0.05] bg-[#111111] px-14 py-4">
+        <div>
+          <div className="mb-2">
+            <Link
+              href="/portal"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-500 underline-offset-4 transition hover:text-emerald-400"
+            >
+              <ArrowLeft size={13} />
+              {t.allWorks}
+            </Link>
+          </div>
 
-    {/* Navegação anterior */}
-    {anterior ? (
-      <Link
-        aria-label={t.previous}
-        title={anterior.nome}
-        href={`/portal/${anterior.slug}`}
-        className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
-      >
-        <ArrowLeft size={17} />
-      </Link>
-    ) : (
-      <span className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
-        <ArrowLeft size={17} />
-      </span>
-    )}
+          <header className="relative flex min-h-[126px] items-center justify-center overflow-hidden rounded-xl border border-white/[0.05] bg-[#111111] px-14 py-4">
 
-    {/* Conteúdo central */}
-    <div className="flex flex-col items-center text-center">
+            {/* Navegação anterior */}
+            {anterior ? (
+              <Link
+                aria-label={t.previous}
+                title={anterior.nome}
+                href={`/portal/${anterior.slug}`}
+                className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
+              >
+                <ArrowLeft size={17} />
+              </Link>
+            ) : (
+              <span className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
+                <ArrowLeft size={17} />
+              </span>
+            )}
 
-      <span className="text-[10px] font-medium text-zinc-500">
-        {t.work} {indiceObra >= 0 ? indiceObra + 1 : "—"} {locale === "en" ? "of" : "de"} {totalObras}
-      </span>
+            {/* Conteúdo central */}
+            <div className="flex flex-col items-center text-center">
 
-      <h1 className="mt-0.5 text-xl font-bold leading-tight tracking-tight text-zinc-100 sm:text-[37px]">
-        {obra.nome}
-      </h1>
+              <span className="text-[10px] font-medium text-zinc-500">
+                {t.work} {indiceObra >= 0 ? indiceObra + 1 : "—"} {locale === "en" ? "of" : "de"} {totalObras}
+              </span>
 
-      <p className="mt-1 text-xs text-zinc-400">
-        {[obra.cidade, obra.estado].filter(Boolean).join(" - ")}
-      </p>
+              <h1 className="mt-0.5 text-xl font-bold leading-tight tracking-tight text-zinc-100 sm:text-[37px]">
+                {obra.nome}
+              </h1>
 
-      {/* Progresso */}
-      <div className="mt-2 flex items-center justify-center gap-[5px]">
-        {Array.from({ length: totalObras }).map((_, i) => (
-          <span
-            key={i}
-            className={`h-[6px] rounded-full transition-all ${
-              i === indiceObra
-                ? "w-[17px] bg-emerald-500"
-                : "w-[6px] bg-zinc-700"
-            }`}
-          />
-        ))}
-      </div>
+              <p className="mt-1 text-xs text-zinc-400">
+                {[obra.cidade, obra.estado].filter(Boolean).join(" - ")}
+              </p>
 
-      {/* Status */}
-      <span className="mt-1.5 rounded-md border border-emerald-500/10 bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-500">
-        {statusAtual}
-      </span>
-    </div>
+              {/* Progresso */}
+              <div className="mt-2 flex items-center justify-center gap-[5px]">
+                {Array.from({ length: totalObras }).map((_, i) => (
+                  <span
+                    key={i}
+                    className={`h-[6px] rounded-full transition-all ${i === indiceObra
+                        ? "w-[17px] bg-emerald-500"
+                        : "w-[6px] bg-zinc-700"
+                      }`}
+                  />
+                ))}
+              </div>
 
-    {/* Navegação próxima */}
-    {proxima ? (
-      <Link
-        aria-label={t.next}
-        title={proxima.nome}
-        href={`/portal/${proxima.slug}`}
-        className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
-      >
-        <ArrowRight size={17} />
-      </Link>
-    ) : (
-      <span className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
-        <ArrowRight size={17} />
-      </span>
-    )}
-  </header>
-</div>
+              {/* Status */}
+              <span className="mt-1.5 rounded-md border border-emerald-500/10 bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-500">
+                {statusAtual}
+              </span>
+            </div>
+
+            {/* Navegação próxima */}
+            {proxima ? (
+              <Link
+                aria-label={t.next}
+                title={proxima.nome}
+                href={`/portal/${proxima.slug}`}
+                className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
+              >
+                <ArrowRight size={17} />
+              </Link>
+            ) : (
+              <span className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
+                <ArrowRight size={17} />
+              </span>
+            )}
+          </header>
+        </div>
 
 
         {/* <ObraGaleria
@@ -511,7 +553,12 @@ export default function ObraDashboard({
               <h2 className="font-semibold">{t.threeD}</h2>
               <p className="mt-1 text-xs text-zinc-500">{t.threeDDetail}</p>
             </div>
-            <Visualizacao3D modeloUrl={obra.modelo_3d_url} percentual={percentual} />
+            <Visualizacao3D
+  modeloUrl={obra.modelo_3d_url}
+  percentual={percentual}
+  titulo={t.comingSoon}
+  descricao={t.comingSoonDetail}
+/>
             <p className="mt-3 text-xs text-zinc-400">
               <span className="mr-2 inline-block h-2 w-2 rounded-full bg-emerald-400" />
               {obra.modelo_3d_url ? t.modelRegistered : `${t.illustrative} · ${percentual}%`}

@@ -3,7 +3,12 @@
 
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, ContactShadows, Environment, useGLTF } from "@react-three/drei";
+import {
+  OrbitControls,
+  ContactShadows,
+  Environment,
+  useGLTF,
+} from "@react-three/drei";
 import { Clock3 } from "lucide-react";
 
 function GalpaoIlustrativo({ percentual }) {
@@ -46,29 +51,26 @@ function ModeloGLB({ url }) {
   return <primitive object={scene.clone()} scale={1.6} position={[0, -0.7, 0]} />;
 }
 
-export default function Visualizacao3D({ modeloUrl, percentual, temObra = true }) {
-
-  // Sem obra: exibe EM BREVE
-  if (!temObra) {
+export default function Visualizacao3D({
+  modeloUrl,
+  percentual,
+  titulo = "EM BREVE",
+  descricao = "O modelo 3D estará disponível em breve.",
+}) {
+  if (!modeloUrl) {
     return (
-      <div className="relative flex h-[260px] flex-col items-center justify-center overflow-hidden rounded-xl border border-white/[0.05] bg-[radial-gradient(ellipse_at_center,_#202522_0%,_#101211_75%)]">
-
+      <div className="flex h-[260px] flex-col items-center justify-center overflow-hidden rounded-xl border border-white/[0.05] bg-[radial-gradient(ellipse_at_center,_#202522_0%,_#101211_75%)]">
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/10">
           <Clock3 size={27} className="text-emerald-500" />
         </div>
 
         <h3 className="mt-4 text-lg font-bold tracking-[0.18em] text-zinc-100">
-          EM BREVE
+          {titulo}
         </h3>
 
-        <p className="mt-1 text-xs text-zinc-500">
-          Uma nova obra estará disponível em breve.
+        <p className="mt-1 px-4 text-center text-xs text-zinc-500">
+          {descricao}
         </p>
-
-        <div className="mt-4 h-1 w-16 overflow-hidden rounded-full bg-zinc-800">
-          <div className="h-full w-1/2 rounded-full bg-emerald-500/60" />
-        </div>
-
       </div>
     );
   }
@@ -80,9 +82,7 @@ export default function Visualizacao3D({ modeloUrl, percentual, temObra = true }
         <directionalLight position={[4, 7, 5]} intensity={2} castShadow />
 
         <Suspense fallback={<GalpaoIlustrativo percentual={percentual} />}>
-          {modeloUrl
-            ? <ModeloGLB url={modeloUrl} />
-            : <GalpaoIlustrativo percentual={percentual} />}
+          <ModeloGLB url={modeloUrl} />
           <Environment preset="city" />
         </Suspense>
 
