@@ -13,7 +13,7 @@ export default function Mission() {
 
   const t = messages[locale].mission;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const icons = [
     Award,
@@ -64,13 +64,15 @@ export default function Mission() {
             {/* Card */}
             <div
               className="
-                absolute
-                bottom-8
-                left-8
-                rounded-2xl
-                bg-white
-                p-6
-                shadow-xl
+  absolute
+  bottom-3
+  left-1/2
+  -translate-x-1/2
+  rounded-2xl
+  bg-white
+  p-6
+  shadow-xl
+w-[80%]
               "
             >
 

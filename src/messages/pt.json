@@ -10,7 +10,7 @@
       "cases":"Cases",
       "mission": "Missão"
     },
-    "language": "PT | EN",
+    "language": "PT | EN | ES",
     "requestQuote": "Solicitar orçamento"
   },
   "hero": {
@@ -28,7 +28,7 @@
         "label": "Obras entregues"
       },
       "experience": {
-        "value": "10+",
+        "value": "15+",
         "label": "Anos de experiência"
       },
       "commitment": {
@@ -38,45 +38,51 @@
     }
   },
   "services": {
-    "badge": "Serviços",
-    "title": "Soluções completas em fundações para qualquer porte de obra.",
-    "description": "Atuamos desde o planejamento até a execução, utilizando soluções eficientes e equipes altamente qualificadas para garantir segurança, qualidade e produtividade.",
-    "button": "Solicitar orçamento",
-    "learnMore": "Saiba mais",
-    "items": [
-      {
-        "title": "Fundação industrial",
-        "description": "Execução de fundações para estruturas industriais conforme especificação de projeto."
-      },
-      {
-        "title": "Terraplanagem",
-        "description": "Demolição e movimentação de terra com planejamento e controle de execução."
-      },
-      {
-        "title": "Galpão industrial",
-        "description": "Galpões metálicos conforme projeto estrutural."
-      },
-      {
-        "title": "Instalação de pontes rolantes",
-        "description": "Instalação de pontes rolantes com eficiência e confiabilidade."
-      },
-      {
-        "title": "Projetos estruturais",
-        "description": "Projetos estruturais conforme normas técnicas e requisitos do empreendimento."
-      },
-      {
-        "title": "Instalações eletricas e Hidráulicas",
-        "description": "Instalações elétricas e hidráulicas com qualidade e segurança."
-      }
-    ]
-  },
+  "badge": "Serviços",
+  "title": "Soluções completas em fundações para qualquer porte de obra.",
+  "description": "Atuamos desde o planejamento até a execução, utilizando soluções eficientes e equipes altamente qualificadas para garantir segurança, qualidade e produtividade.",
+  "button": "Solicitar orçamento",
+  "learnMore": "Saiba mais",
+  "items": [
+    {
+      "title": "Fundação industrial",
+      "description": "Execução de fundações para estruturas industriais conforme especificação de projeto.",
+      "details": "Executamos fundações industriais com foco em resistência, estabilidade e precisão técnica. Desenvolvemos soluções de acordo com as características do solo e as necessidades de cada projeto, garantindo uma base segura e confiável para sua construção."
+    },
+    {
+      "title": "Terraplanagem",
+      "description": "Demolição e movimentação de terra com planejamento e controle de execução.",
+      "details": "Realizamos serviços de terraplanagem, preparação e nivelamento de terrenos, cortes, aterros e movimentação de solo. Trabalhamos com planejamento e equipamentos adequados para proporcionar as condições ideais de execução, aproveitamento da área e segurança em todas as etapas da obra."
+    },
+    {
+      "title": "Galpão industrial",
+      "description": "Galpões metálicos conforme projeto estrutural.",
+      "details": "Desenvolvemos soluções para construção e montagem de galpões industriais, seguindo as especificações dos projetos estruturais. Nosso trabalho busca oferecer estruturas resistentes, funcionais e adequadas às necessidades de cada operação, considerando aproveitamento de espaço, durabilidade e eficiência."
+    },
+    {
+      "title": "Instalação de pontes rolantes",
+      "description": "Instalação de pontes rolantes com eficiência e confiabilidade.",
+      "details": "Executamos serviços de instalação e montagem de pontes rolantes, considerando os requisitos técnicos, estruturais e operacionais de cada ambiente industrial. Priorizamos o alinhamento, a segurança e a confiabilidade dos sistemas, contribuindo para a movimentação eficiente de cargas e materiais."
+    },
+    {
+      "title": "Projetos estruturais",
+      "description": "Projetos estrururais conforme normas técnicas e especificaçoes de cada obra.",
+      "details": "Elaboramos soluções estruturais considerando as características e necessidades de cada projeto. Os projetos são desenvolvidos com atenção à segurança, funcionalidade, dimensionamento e atendimento às normas técnicas aplicáveis, buscando otimizar materiais e garantir eficiência construtiva."
+    },
+    {
+      "title": "Sistemas e instalações",
+      "description": "Soluções completas em instalações elétricas, hidráulicas e sistemas de combate a incêndio.",
+      "details": "Realizamos instalações elétricas, hidráulicas e sistema de bombeiro para ambientes industriais e comerciais, seguindo os requisitos técnicos de cada projeto. Trabalhamos para garantir funcionalidade, organização, segurança e eficiência dos sistemas, desde a infraestrutura até a execução das instalações."
+    }
+  ]
+},
   "mission": {
     "badge": "Quem Somos",
     "title": "Engenharia de fundações baseada em confiança, experiência e inovação.",
     "description": "A Jama Fundações atua em obras de pequeno, médio e grande porte, oferecendo soluções completas em fundações profundas. Nossa equipe une experiência técnica, equipamentos modernos e planejamento para entregar resultados com segurança e eficiência.",
     "card": {
       "subtitle": "Compromisso com a engenharia",
-      "years": "+10 anos",
+      "years": "+15 anos",
       "description": "Construindo bases sólidas para grandes projetos."
     },
     "button": "Fale com nossa equipe",
@@ -136,12 +142,12 @@
         "label": "Volume Executado"
       },
       {
-        "value": 7,
-        "suffix": "",
-        "label": "Estados Atendidos"
+        "value": 8 ,
+        "suffix": " + 1",
+        "label": "Estados Atendidos e um país"
       },
       {
-        "value": 10,
+        "value": 15,
         "suffix": "+",
         "label": "Anos de Experiência"
       },
@@ -319,31 +325,85 @@
     "cardDescription": "Execução de fundações com alto padrão técnico, equipe especializada e acompanhamento completo da obra.",
     "items": [
       {
-        "image": "/images/cases/case-1.jpeg",
+        "image": "/images/cases/case1.jpeg",
         "title": "Fundação industrial N° 170",
         "city": "Valença • RJ",
         "description":"Fundação para uma linha de corte transversal 2000 x 25mm – equipamento essencial na indústria do aço, responsável pelo corte de bobinas em chapas com alta precisão e produtividade."
       },
       {
-        "image": "/images/cases/case-2.jpeg",
+        "image": "/images/cases/case2.jpeg",
         "title": "Fundação industrial N° 168",
         "city": "Betim • MG",
         "description":"Fundação concluída para instalação de máquina de corte transversal 2.000x25mm."
       },
       {
-        "image": "/images/cases/case-3.jpeg",
+        "image": "/images/cases/case3.jpeg",
         "title": "Galpão industrial",
         "city": "Ipiranga  • SP",
         "description":"Galpão industrial com 6.100m² de área construída, incluindo fundação e montagem de sistema de bombeiro."
       },
       {
-        "image": "/images/cases/case-4.jpeg",
+        "image": "/images/cases/case4.jpeg",
         "title": "Galpão industrial",
         "city": "Volta Redonda • RJ",
         "description":"Galpão com estrutura para pontes rolantes de 5/10/20."
       }
     ]
-  }
+  }, 
+"equipment": {
+ "badge": "Nossa estrutura",
+  "title": "Máquinas e Frota de veículos",
+  "description":
+    "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
+  "button": "Solicite um orçamento",
+  "detailsButton": "Saiba mais",
+
+  "items": [
+    {
+      "title": "Frota de veículos",
+      "category": "veiculos",
+      "description":
+        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
+      "application": "Execução de fundações",
+      "images": [
+                  "/images/equipment/carro20.jpeg",
+          "/images/equipment/caminhao.jpeg",
+          "/images/equipment/caminhao2.jpeg",
+           "/images/equipment/retro3.jpeg",
+          "/images/equipment/retro4.jpeg",
+          "/images/equipment/retro5.jpeg",
+          "/images/equipment/caminhao3.jpeg",
+          "/images/equipment/caminhao4.jpeg",
+          "/images/equipment/caminhao5.jpeg",
+          "/images/equipment/container.jpeg",
+          "/images/equipment/retro1.jpeg",
+          "/images/equipment/retro2.jpeg",
+          "/images/equipment/retro6.jpeg",
+          "/images/equipment/carro1.jpeg",
+          "/images/equipment/carro2.jpeg",
+          "/images/equipment/carro3.jpeg",
+          "/images/equipment/carro4.jpeg",
+          "/images/equipment/carro5.jpeg",
+          "/images/equipment/carro6.jpeg",
+          "/images/equipment/carro7.jpeg",
+          "/images/equipment/carro8.jpeg",
+          "/images/equipment/carro9.jpeg",
+          "/images/equipment/carro10.jpeg",
+          "/images/equipment/carro11.jpeg",
+          "/images/equipment/carro12.jpeg",
+          "/images/equipment/carro13.jpeg",
+          "/images/equipment/carro14.jpeg",
+          "/images/equipment/carro15.jpeg",
+          "/images/equipment/carro16.jpeg",
+          "/images/equipment/carro17.jpeg",
+          "/images/equipment/carro18.jpeg",
+          "/images/equipment/carro19.jpeg",
+          "/images/equipment/retro7.jpeg"
+        ]
+    }
+  ]
+}
+
 
 
 

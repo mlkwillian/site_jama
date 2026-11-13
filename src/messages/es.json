@@ -1,0 +1,400 @@
+
+{
+  "header": {
+    "logo": {
+      "name": "JAMA",
+      "suffix": "Cimentaciones"
+    },
+    "menu": {
+      "services": "Servicios",
+      "diff": "Diferenciales",
+      "cases": "Proyectos",
+      "mission": "Misión"
+    },
+    "language": "ES | PT | EN",
+    "requestQuote": "Solicitar presupuesto"
+  },
+  "hero": {
+    "badge": "Ingeniería industrial",
+    "title": "Construyendo la base de los",
+    "titleHighlight": "grandes proyectos.",
+    "description": "Soluciones de cimentación con compromiso, seguridad y altos estándares de ejecución para obras industriales y de infraestructura.",
+    "buttons": {
+      "quote": "Solicitar presupuesto",
+      "projects": "Ver proyectos"
+    },
+    "stats": {
+      "works": {
+        "value": "+200",
+        "label": "Obras entregadas"
+      },
+      "experience": {
+        "value": "15+",
+        "label": "Años de experiencia"
+      },
+      "commitment": {
+        "value": "100%",
+        "label": "Compromiso técnico"
+      }
+    }
+  },
+ "services": {
+  "badge": "Servicios",
+  "title": "Soluciones completas de cimentación para obras de cualquier tamaño.",
+  "description": "Actuamos desde la planificación hasta la ejecución, utilizando soluciones eficientes y equipos altamente cualificados para garantizar seguridad, calidad y productividad.",
+  "button": "Solicitar presupuesto",
+  "learnMore": "Más información",
+  "items": [
+    {
+      "title": "Cimentación industrial",
+      "description": "Ejecución de cimentaciones para estructuras industriales según las especificaciones del proyecto.",
+      "details": "Realizamos cimentaciones industriales priorizando la resistencia, la estabilidad y la precisión técnica. Desarrollamos soluciones adaptadas a las características del suelo y a las necesidades de cada proyecto, garantizando una base segura y fiable para su construcción."
+
+    },
+    {
+      "title": "Movimiento de tierras",
+      "description": "Demolición y movimiento de tierras con planificación y control de ejecución.",
+      "details": "Realizamos trabajos de movimiento de tierras, preparación y nivelación de terrenos, excavaciones, rellenos y desplazamiento de suelo. Trabajamos con planificación y equipos adecuados para garantizar las condiciones ideales de ejecución, el aprovechamiento del espacio y la seguridad en todas las etapas de la obra."
+    },
+    {
+      "title": "Naves industriales",
+      "description": "Naves metálicas según el proyecto estructural.",
+      "details": "Desarrollamos soluciones para la construcción y montaje de naves industriales, siguiendo las especificaciones de los proyectos estructurales. Nuestro trabajo busca ofrecer estructuras resistentes, funcionales y adaptadas a las necesidades de cada operación, teniendo en cuenta el aprovechamiento del espacio, la durabilidad y la eficiencia."
+    },
+    {
+      "title": "Instalación de puentes grúa",
+      "description": "Instalación de puentes grúa con eficiencia y confiabilidad.",
+      "details": "Ejecutamos trabajos de instalación y montaje de puentes grúa, teniendo en cuenta los requisitos técnicos, estructurales y operativos de cada entorno industrial. Priorizamos la alineación, la seguridad y la confiabilidad de los sistemas, contribuyendo al movimiento eficiente de cargas y materiales."
+    },
+    { "title": "Proyectos Estructurales",
+"description": "Proyectos estructurales conforme a las normas técnicas y especificaciones de cada obra.",
+"details": "Desarrollamos soluciones estructurales considerando las características y necesidades de cada proyecto. Los proyectos se desarrollan prestando atención a la seguridad, la funcionalidad, el dimensionamiento y el cumplimiento de las normas técnicas aplicables, buscando optimizar los materiales y garantizar la eficiencia constructiva."
+
+},
+
+{ "title": "Sistemas e instalaciones",
+"description": "Soluciones integrales para sistemas eléctricos, de fontanería y de extinción de incendios.",
+"details": "Realizamos instalaciones eléctricas, de fontanería y de sistemas contra incendios para entornos industriales y comerciales, adaptándonos a los requisitos técnicos de cada proyecto. Trabajamos para garantizar la funcionalidad, la organización, la seguridad y la eficiencia de los sistemas, desde la infraestructura hasta la ejecución de la instalación."
+
+}
+  ]
+},
+  "mission": {
+    "badge": "Quiénes somos",
+    "title": "Ingeniería de cimentaciones basada en confianza, experiencia e innovación.",
+    "description": "JAMA Fundações trabaja en obras de pequeña, mediana y gran escala, ofreciendo soluciones completas de cimentaciones profundas. Nuestro equipo combina experiencia técnica, equipos modernos y planificación para entregar resultados con seguridad y eficiencia.",
+    "card": {
+      "subtitle": "Compromiso con la ingeniería",
+      "years": "+15 años",
+      "description": "Construyendo bases sólidas para grandes proyectos."
+    },
+    "button": "Hable con nuestro equipo",
+    "values": [
+      {
+        "title": "Misión",
+        "description": "Ejecutar cimentaciones con excelencia, garantizando seguridad, calidad y cumplimiento de los plazos en cada proyecto."
+      },
+      {
+        "title": "Visión",
+        "description": "Ser una referencia nacional en ingeniería de cimentaciones, reconocida por su innovación, confiabilidad y rendimiento."
+      },
+      {
+        "title": "Valores",
+        "description": "Ética, compromiso, transparencia, valoración de las personas y mejora continua en todos los procesos."
+      }
+    ]
+  },
+  "differentials": {
+    "badge": "Diferenciales",
+    "title": "Ingeniería, proyectos y confianza en cada cimentación.",
+    "description": "Nuestra actuación se basa en la calidad técnica, la innovación y el compromiso con los resultados, ofreciendo soluciones seguras para obras de cualquier tamaño.",
+    "items": [
+      {
+        "title": "Seguridad",
+        "description": "Procesos rigurosos y equipos capacitados para garantizar la máxima seguridad en todas las etapas de la obra."
+      },
+      {
+        "title": "Calidad",
+        "description": "Control técnico, materiales certificados y ejecución conforme a las normas y estándares de ingeniería."
+      },
+      {
+        "title": "Proyectos",
+        "description": "Proyectos, planificación y desarrollo de soluciones estructurales para cimentaciones y naves industriales."
+      },
+      {
+        "title": "Equipo especializado",
+        "description": "Ingenieros y profesionales experimentados acompañando cada obra desde el inicio hasta la entrega."
+      }
+    ]
+  },
+  "metrics": {
+    "badge": "Resultados",
+    "title": "Cifras que reflejan nuestra experiencia.",
+    "description": "Cada proyecto ejecutado representa nuestro compromiso con la calidad, la seguridad y la excelencia en ingeniería de cimentaciones.",
+    "items": [
+      {
+        "value": 200,
+        "suffix": "+",
+        "label": "Obras entregadas"
+      },
+      {
+        "value": 150000,
+        "suffix": " m³",
+        "label": "Volumen ejecutado"
+      },
+      {
+        "value": 7,
+        "suffix": "",
+        "label": "Estados atendidos"
+      },
+      {
+        "value": 15,
+        "suffix": "+",
+        "label": "Años de experiencia"
+      },
+      {
+        "value": 60000,
+        "suffix": " m²+",
+        "label": "Área construida en naves industriales"
+      },
+      {
+        "value": 25000,
+        "suffix": " m²+",
+        "label": "En cimentaciones de maquinaria ejecutadas"
+      }
+    ]
+  },
+  "clients": {
+    "badge": "Clientes y socios",
+    "title": "Empresas que confían en JAMA Fundações",
+    "description": "Trabajamos en obras industriales, comerciales, logísticas y de infraestructura junto a grandes empresas del mercado."
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Construyamos su próximo proyecto.",
+    "description": "Póngase en contacto con nosotros para solicitar un presupuesto o conversar con nuestro equipo técnico.",
+    "form": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "servicePlaceholder": "Seleccione un servicio",
+      "message": "Cuéntenos un poco sobre su obra...",
+      "button": "Solicitar presupuesto",
+      "service1": "Cimentación industrial",
+      "service2": "Movimiento de tierras",
+      "service3": "Nave industrial",
+      "service4": "Instalación de maquinaria industrial",
+      "service5": "Proyectos estructurales",
+      "service6": "Instalaciones eléctricas e hidráulicas",
+      "service7": "Soldadura de suelo"
+    },
+    "info": {
+      "title": "Hable con nuestros especialistas",
+      "description": "Nuestro equipo está preparado para comprender sus necesidades e indicar la mejor solución para su obra.",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "email": "Correo electrónico",
+      "address": "Dirección",
+      "businessHours": "Horario de atención",
+      "weekdays": "De lunes a viernes",
+      "hours": "07:00 a 18:00"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Especialistas en cimentaciones, movimiento de tierras y estructuras industriales, ofreciendo soluciones para obras con calidad y seguridad."
+    },
+    "navigation": {
+      "title": "Navegación",
+      "services": "Servicios",
+      "solutions": "Soluciones",
+      "cases": "Proyectos",
+      "mission": "Misión",
+      "contact": "Contacto"
+    },
+    "institutional": {
+      "title": "Institucional",
+      "privacyPolicy": "Política de privacidad",
+      "clientPortal": "Portal del cliente",
+      "careers": "Trabaje con nosotros"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "copyright": "JAMA Fundações. Todos los derechos reservados.",
+    "privacy": {
+      "title": "Política de privacidad",
+      "intro": "JAMA Fundações respeta la privacidad de los usuarios y está comprometida con la protección de los datos personales.",
+      "sections": [
+        {
+          "title": "1. Recopilación de información",
+          "text": "Recopilamos únicamente los datos proporcionados voluntariamente a través de los formularios de contacto, solicitudes de presupuesto y otros canales disponibles en el sitio web."
+        },
+        {
+          "title": "2. Uso de la información",
+          "text": "Los datos se utilizan para responder solicitudes, elaborar presupuestos, brindar atención y mejorar nuestros servicios."
+        },
+        {
+          "title": "3. Intercambio de datos",
+          "text": "No compartimos datos personales con terceros, excepto cuando exista una obligación legal."
+        },
+        {
+          "title": "4. Seguridad",
+          "text": "Adoptamos medidas técnicas y administrativas para proteger la información contra accesos no autorizados, pérdidas o modificaciones."
+        },
+        {
+          "title": "5. Derechos del titular",
+          "text": "El titular puede solicitar el acceso, la corrección o la eliminación de sus datos conforme a la legislación aplicable."
+        },
+        {
+          "title": "6. Contacto",
+          "text": "Si tiene alguna pregunta sobre esta política, póngase en contacto con nosotros a través de nuestros canales de atención."
+        }
+      ]
+    },
+    "careers": {
+      "title": "Trabaje con nosotros",
+      "description": "Siempre buscamos profesionales comprometidos, cualificados y apasionados por construir grandes proyectos. Complete sus datos a continuación y envíe un mensaje. Después, será redirigido a WhatsApp para adjuntar su currículum.",
+      "fields": {
+        "name": "Nombre completo",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "position": "Puesto de interés",
+        "message": "Mensaje"
+      },
+      "placeholder": {
+        "name": "Introduzca su nombre completo",
+        "email": "Introduzca su correo electrónico",
+        "phone": "+55 (11) 99999-9999",
+        "position": "Ej.: Ingeniero civil",
+        "message": "Cuéntenos un poco sobre usted..."
+      },
+      "button": "Continuar en WhatsApp"
+    }
+  },
+  "portal": {
+    "badge": "Sumaré",
+    "title": "Acompañe su obra en tiempo real.",
+    "description": "Nuestro portal ofrece total transparencia durante la ejecución de la obra. Consulte cronogramas, documentos técnicos y el avance de cada etapa de forma sencilla.",
+    "button": "Próximamente",
+    "dashboard": {
+      "description": "¿Quiere ver cómo se está construyendo esta obra? Sígala en nuestro portal.",
+      "button": "Seguir en el portal",
+      "label": "Portal del cliente",
+      "project": "Obra • Nave industrial",
+      "status": "En ejecución",
+      "progress": "Ejecución de la nave",
+      "cards": [
+        {
+          "title": "Cronograma",
+          "text": "Actualizado en tiempo real"
+        },
+        {
+          "title": "Responsable técnico",
+          "text": "Equipo JAMA"
+        },
+        {
+          "title": "Previsión de entrega",
+          "text": "Septiembre/2026"
+        },
+        {
+          "title": "Última actualización",
+          "text": "Hoy a las 14:35"
+        }
+      ]
+    },
+    "features": [
+      "Cronograma de ejecución actualizado",
+      "Indicadores de la obra en tiempo real",
+      "Responsable técnico identificado"
+    ]
+  },
+  "cases": {
+    "badge": "Casos de éxito",
+    "title": "Obras que refuerzan nuestra experiencia.",
+    "description": "Cada proyecto se ejecuta con planificación, seguridad y precisión, ofreciendo resultados que generan confianza en nuestros clientes.",
+    "button": "Ver todos los proyectos",
+    "detailsButton": "Ver detalles",
+    "cardDescription": "Ejecución de cimentaciones con altos estándares técnicos, equipo especializado y seguimiento completo de la obra.",
+    "items": [
+      {
+        "image": "/images/cases/case1.jpeg",
+        "title": "Cimentación industrial N.º 170",
+        "city": "Valença • RJ",
+        "description": "Cimentación para una línea de corte transversal de 2000 x 25 mm, equipo esencial en la industria del acero, responsable de cortar bobinas en chapas con alta precisión y productividad."
+      },
+      {
+        "image": "/images/cases/case2.jpeg",
+        "title": "Cimentación industrial N.º 168",
+        "city": "Betim • MG",
+        "description": "Cimentación finalizada para la instalación de una máquina de corte transversal de 2000 x 25 mm."
+      },
+      {
+        "image": "/images/cases/case3.jpeg",
+        "title": "Nave industrial",
+        "city": "Ipiranga • SP",
+        "description": "Nave industrial con 6.100 m² de área construida, incluyendo cimentación e instalación del sistema contra incendios."
+      },
+      {
+        "image": "/images/cases/case4.jpeg",
+        "title": "Nave industrial",
+        "city": "Volta Redonda • RJ",
+        "description": "Nave con estructura preparada para puentes grúa de 5/10/20 toneladas."
+      }
+    ]
+  },"equipment": {
+ "badge": "Nossa estrutura",
+  "title": "Máquinas e Frota de veículos",
+  "description":
+    "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
+  "button": "Solicite um orçamento",
+  "detailsButton": "Saiba mais",
+
+ "items": [
+    {
+      "title": "Frota de veículos",
+      "category": "veiculos",
+      "description":
+        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
+      "application": "Execução de fundações",
+      "images": [
+                  "/images/equipment/carro20.jpeg",
+          "/images/equipment/caminhao.jpeg",
+          "/images/equipment/caminhao2.jpeg",
+           "/images/equipment/retro3.jpeg",
+          "/images/equipment/retro4.jpeg",
+          "/images/equipment/retro5.jpeg",
+          "/images/equipment/caminhao3.jpeg",
+          "/images/equipment/caminhao4.jpeg",
+          "/images/equipment/caminhao5.jpeg",
+          "/images/equipment/container.jpeg",
+          "/images/equipment/retro1.jpeg",
+          "/images/equipment/retro2.jpeg",
+          "/images/equipment/retro6.jpeg",
+          "/images/equipment/carro1.jpeg",
+          "/images/equipment/carro2.jpeg",
+          "/images/equipment/carro3.jpeg",
+          "/images/equipment/carro4.jpeg",
+          "/images/equipment/carro5.jpeg",
+          "/images/equipment/carro6.jpeg",
+          "/images/equipment/carro7.jpeg",
+          "/images/equipment/carro8.jpeg",
+          "/images/equipment/carro9.jpeg",
+          "/images/equipment/carro10.jpeg",
+          "/images/equipment/carro11.jpeg",
+          "/images/equipment/carro12.jpeg",
+          "/images/equipment/carro13.jpeg",
+          "/images/equipment/carro14.jpeg",
+          "/images/equipment/carro15.jpeg",
+          "/images/equipment/carro16.jpeg",
+          "/images/equipment/carro17.jpeg",
+          "/images/equipment/carro18.jpeg",
+          "/images/equipment/carro19.jpeg",
+          
+          "/images/equipment/retro7.jpeg"
+        ]
+    }
+  ]
+}
+}

@@ -9,11 +9,12 @@ import Cases from "@/components/Cases";
 import Mission from "@/components/Mission";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Equipment from "@/components/Machines"
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header scrolled />
       <main>
         <Hero />
         <Metrics />
@@ -21,6 +22,7 @@ export default function Home() {
         <Services />
         <Portal />
         <Cases />
+        <Equipment/>
         <Clients />
         <Mission />
         <Contact />

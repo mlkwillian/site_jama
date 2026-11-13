@@ -6,15 +6,19 @@ import { Menu, X, Globe } from "lucide-react";
 import { messages } from "@/lib/translations";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-export default function Header() {
+export default function Header({ compact = false }) {
   const { locale, toggleLanguage } = useLanguage();
 
   const t = messages[locale].header;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
+
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const isCompact = compact || scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,19 +33,19 @@ export default function Header() {
   const links = [
     {
       name: t.menu.diff,
-      href: "#diferenciais",
+      href: "/#diferenciais",
     },
     {
       name: t.menu.services,
-      href: "#servicos",
+      href: "/#servicos",
     },
     {
       name: t.menu.cases,
-      href: "#cases",
+      href: "/#cases",
     },
     {
       name: t.menu.mission,
-      href: "#missao",
+      href: "/#missao",
     },
   ];
 
@@ -57,10 +61,9 @@ export default function Header() {
         transition-all
         duration-500
         ease-in-out
-        ${
-          scrolled
-            ? "bg-primary/95 backdrop-blur-xl shadow-lg"
-            : "bg-transparent"
+        ${isCompact
+          ? "bg-primary/95 backdrop-blur-xl shadow-lg"
+          : "bg-transparent"
         }
       `}
     >
@@ -76,10 +79,9 @@ export default function Header() {
           transition-[height]
           duration-500
           ease-in-out
-          ${
-            scrolled
-              ? "h-24"
-              : "h-50"
+          ${isCompact
+            ? "h-24"
+            : "h-50"
           }
         `}
       >
@@ -105,31 +107,40 @@ export default function Header() {
               transition-all
               duration-500
               ease-in-out
-              ${
-                scrolled
-                  ? "h-[65px]"
-                  : "h-[120px]"
+              ${isCompact
+                ? "h-[65px]"
+                : "h-[120px]"
               }
             `}
           />
         </Link>
 
-        {/* Desktop */}
-        <nav className="hidden items-center gap-10 lg:flex">
+        {/* Desktop - Menu centralizado na tela */}
+        <nav
+          className="
+    absolute
+    left-[48%]
+    hidden
+    -translate-x-1/2
+    items-center
+    gap-10
+    lg:flex
+  "
+        >
           {links.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={`
-                transition-colors
-                duration-300
-                hover:text-secondary-light
-                ${
-                  scrolled
-                    ? "text-white/80"
-                    : "text-white"
+        whitespace-nowrap
+        transition-colors
+        duration-300
+        hover:text-secondary-light
+        ${isCompact
+                  ? "text-white/80"
+                  : "text-white"
                 }
-              `}
+      `}
             >
               {item.name}
             </a>
@@ -146,10 +157,9 @@ export default function Header() {
               transition-colors
               duration-300
               hover:text-secondary-light
-              ${
-                scrolled
-                  ? "text-white/80"
-                  : "text-white"
+              ${isCompact
+                ? "text-white/80"
+                : "text-white"
               }
             `}
             onClick={toggleLanguage}
