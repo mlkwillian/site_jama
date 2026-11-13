@@ -285,57 +285,96 @@ export default function ObraDashboard({
   return (
     <main className="min-h-screen bg-[#111111] text-zinc-100 pt-[110px]">
       <div className="mx-auto max-w-[1440px] px-4 pb-12 pt-5 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <Link href="/portal" className="inline-flex items-center gap-2 text-sm text-emerald-400 transition hover:text-emerald-300">
-            <ArrowLeft size={15} /> {t.allWorks}
-          </Link>
-          <span className="text-xs text-zinc-500">
-            {t.work} {indiceObra >= 0 ? indiceObra + 1 : "—"} {locale === "en" ? "of" : "de"} {totalObras}
-          </span>
-        </div>
+        
+<div>
+  <div className="mb-2">
+    <Link
+      href="/portal"
+      className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-500 underline-offset-4 transition hover:text-emerald-400"
+    >
+      <ArrowLeft size={13} />
+      {t.allWorks}
+    </Link>
+  </div>
 
-        <header className="relative mt-5 overflow-hidden rounded-2xl border border-white/[0.07] bg-[#171717]">
-          {obra.capa_url && (
-            <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url("${obra.capa_url}")` }} />
-          )}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#111]/95 via-[#111]/80 to-[#111]/55" />
-          <div className="relative flex min-h-[220px] items-center justify-between gap-5 px-5 py-8 sm:px-9">
-            <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-400">{t.heroEyebrow}</p>
-              <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">{obra.nome}</h1>
-              <p className="mt-2 flex items-center gap-2 text-sm text-zinc-300">
-                <MapPin size={15} className="text-emerald-400" />
-                {[obra.cidade, obra.estado].filter(Boolean).join(" - ")}
-              </p>
-              <span className="mt-4 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-                {statusAtual}
-              </span>
-            </div>
-            <div className="hidden items-center gap-2 sm:flex">
-              {anterior ? (
-                <Link aria-label={t.previous} title={anterior.nome} href={`/portal/${anterior.slug}`} className="rounded-xl border border-white/10 bg-black/20 p-3 text-zinc-300 transition hover:bg-white/10">
-                  <ArrowLeft size={18} />
-                </Link>
-              ) : (
-                <span className="rounded-xl border border-white/5 p-3 text-zinc-700"><ArrowLeft size={18} /></span>
-              )}
-              {proxima ? (
-                <Link aria-label={t.next} title={proxima.nome} href={`/portal/${proxima.slug}`} className="rounded-xl border border-white/10 bg-black/20 p-3 text-zinc-300 transition hover:bg-white/10">
-                  <ArrowRight size={18} />
-                </Link>
-              ) : (
-                <span className="rounded-xl border border-white/5 p-3 text-zinc-700"><ArrowRight size={18} /></span>
-              )}
-            </div>
-          </div>
-        </header>
+  <header className="relative flex min-h-[126px] items-center justify-center overflow-hidden rounded-xl border border-white/[0.05] bg-[#111111] px-14 py-4">
 
-        <ObraGaleria
+    {/* Navegação anterior */}
+    {anterior ? (
+      <Link
+        aria-label={t.previous}
+        title={anterior.nome}
+        href={`/portal/${anterior.slug}`}
+        className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
+      >
+        <ArrowLeft size={17} />
+      </Link>
+    ) : (
+      <span className="absolute left-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
+        <ArrowLeft size={17} />
+      </span>
+    )}
+
+    {/* Conteúdo central */}
+    <div className="flex flex-col items-center text-center">
+
+      <span className="text-[10px] font-medium text-zinc-500">
+        {t.work} {indiceObra >= 0 ? indiceObra + 1 : "—"} {locale === "en" ? "of" : "de"} {totalObras}
+      </span>
+
+      <h1 className="mt-0.5 text-xl font-bold leading-tight tracking-tight text-zinc-100 sm:text-[37px]">
+        {obra.nome}
+      </h1>
+
+      <p className="mt-1 text-xs text-zinc-400">
+        {[obra.cidade, obra.estado].filter(Boolean).join(" - ")}
+      </p>
+
+      {/* Progresso */}
+      <div className="mt-2 flex items-center justify-center gap-[5px]">
+        {Array.from({ length: totalObras }).map((_, i) => (
+          <span
+            key={i}
+            className={`h-[6px] rounded-full transition-all ${
+              i === indiceObra
+                ? "w-[17px] bg-emerald-500"
+                : "w-[6px] bg-zinc-700"
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Status */}
+      <span className="mt-1.5 rounded-md border border-emerald-500/10 bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-500">
+        {statusAtual}
+      </span>
+    </div>
+
+    {/* Navegação próxima */}
+    {proxima ? (
+      <Link
+        aria-label={t.next}
+        title={proxima.nome}
+        href={`/portal/${proxima.slug}`}
+        className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.07] bg-white/[0.02] text-zinc-300 transition hover:bg-white/10"
+      >
+        <ArrowRight size={17} />
+      </Link>
+    ) : (
+      <span className="absolute right-4 top-1/2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg border border-white/[0.05] text-zinc-700">
+        <ArrowRight size={17} />
+      </span>
+    )}
+  </header>
+</div>
+
+
+        {/* <ObraGaleria
           obraNome={obra.nome}
           capaUrl={obra.capa_url}
           imagens={imagens}
           locale={locale}
-        />
+        /> */}
 
         <section className="mt-5 rounded-2xl border border-white/[0.09] bg-[#151515] p-4 sm:p-5">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
