@@ -4,20 +4,80 @@ import { createClient } from "@/lib/supabase/server";
 import Header from "@/components/Header";
 import ObraDashboard from "./components/ObraDashboard";
 
+const BASE_URL = "https://www.xn--fundaesjama-q9a6p.com.br";
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const supabase = await createClient();
 
   const { data: obra } = await supabase
     .from("obras")
-    .select("nome, descricao")
+    .select("nome, descricao, cidade, estado, capa_url")
     .eq("slug", slug)
     .eq("publicada", true)
     .single();
 
+  if (!obra) {
+    return {
+      title: "Obra não encontrada | JAMA Fundações",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  const titulo = `${obra.nome} | JAMA Fundações`;
+
+  const descricao = [
+    obra.descricao,
+    obra.cidade && obra.estado
+      ? `Localizada em ${obra.cidade}, ${obra.estado}.`
+      : null,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .slice(0, 300);
+
+  const url = `${BASE_URL}/portal/${encodeURIComponent(slug)}`;
+
   return {
-    title: obra ? `${obra.nome} | JAMA Fundações` : "Obra | JAMA Fundações",
-    description: obra?.descricao || "Acompanhe nossos projetos.",
+    title: titulo,
+    description: descricao || `Conheça a obra ${obra.nome}, acompanhada pela JAMA Fundações.`,
+
+    alternates: {
+      canonical: url,
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+
+    openGraph: {
+      title: titulo,
+      description,
+      url,
+      siteName: "JAMA Fundações",
+      locale: "pt_BR",
+      type: "article",
+      images: obra.capa_url
+        ? [{ url: obra.capa_url, alt: obra.nome }]
+        : [],
+    },
+
+    twitter: {
+      card: obra.capa_url
+        ? "summary_large_image"
+        : "summary",
+      title: titulo,
+      description,
+      images: obra.capa_url ? [obra.capa_url] : [],
+    },
   };
 }
 
