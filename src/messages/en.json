@@ -10,7 +10,7 @@
       "cases": "Projects",
       "mission": "Mission"
     },
-    "language": "EN | PT",
+    "language": "EN | ES | PT",
     "requestQuote": "Request a Quote"
   },
   "hero": {
@@ -28,7 +28,7 @@
         "label": "Completed Projects"
       },
       "experience": {
-        "value": "10+",
+        "value": "15+",
         "label": "Years of Experience"
       },
       "commitment": {
@@ -38,45 +38,52 @@
     }
   },
   "services": {
-    "badge": "Services",
-    "title": "Complete foundation solutions for projects of any size.",
-    "description": "We operate from planning to execution, using efficient solutions and highly qualified teams to guarantee safety, quality, and productivity.",
-    "button": "Request a Quote",
-    "learnMore": "Learn More",
-    "items": [
-      {
-        "title": "Industrial foundation",
-        "description": "Execution of foundations for industrial structures according to project specifications."
-      },
-      {
-        "title": "Earthworks",
-        "description": "Demolition and earthmoving with planning and execution control."
-      },
-      {
-        "title": "Industrial warehouse",
-        "description": "Metal sheds according to structural design."
-      },
-      {
-        "title": "Installation of overhead traveling cranes",
-        "description": "Installation of overhead traveling cranes with efficiency and reliability."
-      },
-      {
-        "title": "Structural projects",
-        "description": "Structural designs in accordance with technical standards and project requirements."
-      },
-      {
-        "title": "Electrical and Plumbing Installations",
-        "description": "Electrical and plumbing installations with quality and safety."
-      }
-    ]
-  },
+  "badge": "Services",
+  "title": "Complete foundation solutions for projects of any size.",
+  "description": "We operate from planning to execution, using efficient solutions and highly qualified teams to guarantee safety, quality, and productivity.",
+  "button": "Request a Quote",
+  "learnMore": "Learn More",
+  "items": [
+    {
+      "title": "Industrial Foundations",
+      "description": "Execution of foundations for industrial structures according to project specifications.",
+      "details": "We execute industrial foundations with a focus on strength, stability, and technical precision. We develop solutions according to soil characteristics and the needs of each project, guaranteeing a safe and reliable base for your construction."
+    },
+    {
+      "title": "Earthworks",
+      "description": "Demolition and earthmoving with planning and execution control.",
+      "details": "We provide earthworks services, including site preparation, land leveling, excavation, filling, and soil movement. Through careful planning and the use of appropriate equipment, we ensure ideal site conditions, efficient use of space, and safety throughout every stage of the project."
+    },
+    {
+      "title": "Industrial Warehouses",
+      "description": "Metal structures built according to structural engineering designs.",
+      "details": "We develop solutions for the construction and assembly of industrial warehouses, following structural engineering specifications. Our goal is to deliver durable, strong, and functional structures tailored to each operation, considering space optimization, long-term performance, and construction efficiency."
+    },
+    {
+      "title": "Overhead Crane Installation",
+      "description": "Installation of overhead cranes with efficiency and reliability.",
+      "details": "We carry out overhead crane installation and assembly, taking into account the technical, structural, and operational requirements of each industrial environment. We prioritize proper alignment, safety, and system reliability, contributing to the efficient handling and movement of loads and materials."
+    },
+    {
+"title": "Structural Projects",
+"description": "Structural projects according to technical standards and specifications of each work.",
+"details": "We develop structural solutions considering the characteristics and needs of each project. The projects are developed with attention to safety, functionality, dimensioning and compliance with applicable technical standards, seeking to optimize materials and ensure constructive efficiency."
+},
+
+{
+"title": "Systems and installations",
+"description": "Complete solutions for electrical, plumbing, and fire suppression systems.",
+"details": "We carry out electrical, plumbing, and fire protection system installations for industrial and commercial environments, following the technical requirements of each project. We work to ensure the functionality, organization, safety, and efficiency of the systems, from infrastructure to installation execution."
+}
+  ]
+},
   "mission": {
     "badge": "About Us",
     "title": "Foundation engineering built on trust, experience and innovation.",
     "description": "Jama Fundações operates on small, medium and large-scale projects, providing complete deep foundation solutions. Our team combines technical expertise, modern equipment and strategic planning to deliver safe and efficient results.",
     "card": {
       "subtitle": "Commitment to Engineering",
-      "years": "10+ Years",
+      "years": "15+ Years",
       "description": "Building solid foundations for major projects."
     },
     "button": "Talk to Our Team",
@@ -141,7 +148,7 @@
         "label": "States Served"
       },
       {
-        "value": 10,
+        "value": 15,
         "suffix": "+",
         "label": "Years of Experience"
       },
@@ -318,31 +325,83 @@
     "cardDescription": "Foundation work executed with high technical standards, a specialized team, and comprehensive project supervision.",
         "items": [
       {
-        "image": "/images/cases/case-1.jpeg",
+        "image": "/images/cases/case1.jpeg",
         "title": "Industrial foundation N° 170",
         "city": "Valença • RJ",
         "description":"Foundation for a 2000 x 25mm cross-cutting line – essential equipment in the steel industry, responsible for cutting coils into sheets with high precision and productivity."
       },
       {
-        "image": "/images/cases/case-2.jpeg",
+        "image": "/images/cases/case2.jpeg",
         "title": "Industrial foundation N° 168",
         "city": "Betim • MG",
         "description":"Foundation completed for installation of a 2000x25mm cross-cutting machine."
       },
       {
-        "image": "/images/cases/case-3.jpeg",
+        "image": "/images/cases/case3.jpeg",
         "title": "Industrial warehouse",
         "city": "Ipiranga  • SP",
         "description":"Industrial warehouse with 6,100m² of constructed area, including foundation and fire suppression system installation."
       },
       {
-        "image": "/images/cases/case-4.jpeg",
+        "image": "/images/cases/case4.jpeg",
         "title": "Industrial warehouse",
         "city": "Volta Redonda • RJ",
         "description":"Warehouse with structure for 5/10/20 inch overhead cranes."
       }
     ]
-  }
+  },"equipment": {
+ "badge": "Nossa estrutura",
+  "title": "Máquinas e Frota de veículos",
+  "description":
+    "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
+  "button": "Solicite um orçamento",
+  "detailsButton": "Saiba mais",
+
+  "items": [
+    {
+      "title": "Frota de veículos",
+      "category": "veiculos",
+      "description":
+        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
+      "application": "Execução de fundações",
+      "images": [
+                  "/images/equipment/carro20.jpeg",
+          "/images/equipment/caminhao.jpeg",
+          "/images/equipment/caminhao2.jpeg",
+           "/images/equipment/retro3.jpeg",
+          "/images/equipment/retro4.jpeg",
+          "/images/equipment/retro5.jpeg",
+          "/images/equipment/caminhao3.jpeg",
+          "/images/equipment/caminhao4.jpeg",
+          "/images/equipment/caminhao5.jpeg",
+          "/images/equipment/container.jpeg",
+          "/images/equipment/retro1.jpeg",
+          "/images/equipment/retro2.jpeg",
+          "/images/equipment/retro6.jpeg",
+          "/images/equipment/carro1.jpeg",
+          "/images/equipment/carro2.jpeg",
+          "/images/equipment/carro3.jpeg",
+          "/images/equipment/carro4.jpeg",
+          "/images/equipment/carro5.jpeg",
+          "/images/equipment/carro6.jpeg",
+          "/images/equipment/carro7.jpeg",
+          "/images/equipment/carro8.jpeg",
+          "/images/equipment/carro9.jpeg",
+          "/images/equipment/carro10.jpeg",
+          "/images/equipment/carro11.jpeg",
+          "/images/equipment/carro12.jpeg",
+          "/images/equipment/carro13.jpeg",
+          "/images/equipment/carro14.jpeg",
+          "/images/equipment/carro15.jpeg",
+          "/images/equipment/carro16.jpeg",
+          "/images/equipment/carro17.jpeg",
+          "/images/equipment/carro18.jpeg",
+          "/images/equipment/carro19.jpeg",
+          "/images/equipment/retro7.jpeg"
+        ]
+    }
+  ]
+}
 
 
 }
