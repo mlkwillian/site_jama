@@ -23,6 +23,10 @@ const geistMono = Geist({
 export const metadata = {
   title: "JAMA FUNDAÇÕES",
   description: "JAMA Fundações Engenharia Industrial",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
