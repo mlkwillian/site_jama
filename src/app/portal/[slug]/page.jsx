@@ -60,7 +60,7 @@ export async function generateMetadata({ params }) {
 
     openGraph: {
       title: titulo,
-      description,
+      description: descricao || `Conheça a obra ${obra.nome}, acompanhada pela JAMA Fundações.`,
       url,
       siteName: "JAMA Fundações",
       locale: "pt_BR",
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }) {
         ? "summary_large_image"
         : "summary",
       title: titulo,
-      description,
+      description: descricao || `Conheça a obra ${obra.nome}, acompanhada pela JAMA Fundações.`,
       images: obra.capa_url ? [obra.capa_url] : [],
     },
   };

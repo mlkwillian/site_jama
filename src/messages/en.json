@@ -350,19 +350,16 @@
       }
     ]
   },"equipment": {
- "badge": "Nossa estrutura",
-  "title": "Máquinas e Frota de veículos",
-  "description":
-    "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
-  "button": "Solicite um orçamento",
-  "detailsButton": "Saiba mais",
-
+ "badge": "Our structure",
+  "title": "Machinery and Vehicle Fleet",
+  "description":"We rely on modern, high-performance equipment to guarantee efficiency, safety, and precision in every project.", 
+  "button": "Request a quote",
+  "detailsButton": "Find out more",
   "items": [
     {
-      "title": "Frota de veículos",
-      "category": "veiculos",
-      "description":
-        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
+      "title": "Vehicle fleet",
+      "category": "vehicles",
+      "description":"Backhoe loader, 8-ton excavator, 135-ton excavator, crawler tractor, crane truck, dump truck, and truck-mounted crane. We also have a fleet of vehicles exclusively for transporting our teams, ensuring quick arrival at construction sites, logistical efficiency, and punctuality at every stage of the services.",      
       "application": "Execução de fundações",
       "images": [
                   "/images/equipment/carro20.jpeg",

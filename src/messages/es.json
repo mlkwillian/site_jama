@@ -344,20 +344,19 @@
       }
     ]
   },"equipment": {
- "badge": "Nossa estrutura",
-  "title": "Máquinas e Frota de veículos",
+ "badge": "Nuestra estructura",
+  "title": "Flota de maquinaria y vehículos",
   "description":
-    "Contamos com equipamentos modernos e de alta performance para garantir eficiência, segurança e precisão em cada projeto.",
-  "button": "Solicite um orçamento",
-  "detailsButton": "Saiba mais",
+    "Confiamos en equipos modernos y de alto rendimiento para garantizar la eficiencia, la seguridad y la precisión en cada proyecto.",
+  "button": "Solicitar una cotización",
+  "detailsButton": "Descubra más",
 
  "items": [
     {
-      "title": "Frota de veículos",
-      "category": "veiculos",
-      "description":
-        "Retroescavadeira, escavadeira 8 ton, escavadeira 135, trator de esteira, caminhão munck, caminhão basculante e caminhão truck, com frota exclusiva de transporte, entregamos a força, a agilidade e a pontualidade que a sua obra precisa.",
-      "application": "Execução de fundações",
+      "title": "Flota de vehículos",
+      "category": "vehículos",
+      "description":"Retroexcavadora, excavadora de 8 toneladas, excavadora de 135 toneladas, tractor de orugas, camión grúa, camión volquete y grúa montada sobre camión. Además, contamos con una flota de vehículos exclusivamente para el transporte de nuestros equipos, lo que garantiza una rápida llegada a las obras, eficiencia logística y puntualidad en cada etapa de los servicios.",     
+      "application": "Construcción de cimientos",
       "images": [
                   "/images/equipment/carro20.jpeg",
           "/images/equipment/caminhao.jpeg",

@@ -12,6 +12,8 @@ export default function AdminLoginPage() {
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   async function handleLogin(e) {
     e.preventDefault();
     setErro("");
@@ -47,12 +49,20 @@ export default function AdminLoginPage() {
     <main className="flex min-h-screen items-center justify-center bg-primary px-6 py-12">
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-2xl">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-primary">
-            JAMA Fundações
-          </h1>
-          <p className="mt-2 text-sm text-gray-500">
-            Área administrativa
-          </p>
+          <img
+            src={`${basePath}/images/logo_preta.png`}
+            alt="Logo da Jama Fundações"
+            className={`
+              w-[60%]
+              mx-auto
+              rounded-[32px]
+              object-cover
+              transition-all
+              duration-500
+              ease-in-out
+             
+            `}
+          />
         </div>
 
         <form onSubmit={handleLogin} className="space-y-5">

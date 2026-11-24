@@ -70,18 +70,29 @@ export default function Footer() {
           <div>
 
             <Link
-              href="/"
-              className="
-                text-3xl
-                font-bold
-                tracking-tight
-              "
-            >
-              JAMA{" "}
-              <span className="text-secondary">
-                Fundações
-              </span>
-            </Link>
+          href="/"
+          className="
+            flex
+            items-center
+            text-2xl
+            font-bold
+            tracking-tight
+            text-white
+          "
+        >
+          <img
+            src={`${basePath}/images/logo_branca.png`}
+            alt="Logo da Jama Fundações"
+            className={`
+              w-[35%]
+              rounded-[15px]
+              object-cover
+              transition-all
+              duration-500
+              ease-in-out
+            `}
+          />
+        </Link>
 
 
             <p
