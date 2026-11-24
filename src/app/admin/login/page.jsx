@@ -11,8 +11,9 @@ export default function AdminLoginPage() {
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
-
+  
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -63,6 +64,9 @@ export default function AdminLoginPage() {
              
             `}
           />
+          <p className="mt-3 text-lg text-gray-500">
+            Área administrativa
+          </p>
         </div>
 
         <form onSubmit={handleLogin} className="space-y-5">

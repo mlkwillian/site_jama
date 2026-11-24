@@ -17,7 +17,7 @@ export default function Cases() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
-    <section id="cases" className="bg-background py-24">
+    <section id="cases" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Cabeçalho */}
