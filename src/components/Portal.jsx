@@ -31,7 +31,7 @@ export default function Portal() {
   }));
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-background py-24">
 
       <div
         className="
@@ -115,7 +115,7 @@ export default function Portal() {
         </span>
 
         <span className="text-3xl font-bold text-secondary">
-          85%
+          50%
         </span>
 
       </div>
@@ -126,7 +126,7 @@ export default function Portal() {
         <div
           className="
             h-full
-            w-[85%]
+            w-[50%]
             rounded-full
             bg-secondary
           "

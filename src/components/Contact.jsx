@@ -94,24 +94,35 @@ ${form.message}`;
         </div>
 
 
-        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="
+  grid
+  min-w-0
+  grid-cols-1
+  gap-8
+  lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]
+  lg:gap-12
+">
 
 
           {/* Formulário */}
           <div
             className="
-              rounded-[32px]
-              bg-white
-              p-6
-              shadow-xl
-              sm:p-8
-              lg:p-10
-            "
+  min-w-0
+  w-full
+  overflow-hidden
+  rounded-3xl
+  bg-white
+  p-4
+  shadow-xl
+  sm:rounded-[32px]
+  sm:p-8
+  lg:p-10
+"
           >
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
 
                 <input
                   type="text"
@@ -132,6 +143,7 @@ ${form.message}`;
                     focus:border-secondary
                     focus:ring-2
                     focus:ring-secondary/20
+                    w-full min-w-0
                   "
                 />
 
@@ -155,13 +167,14 @@ ${form.message}`;
                     focus:border-secondary
                     focus:ring-2
                     focus:ring-secondary/20
+                    w-full min-w-0
                   "
                 />
 
               </div>
 
 
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
 
                 <input
                   type="email"
@@ -182,6 +195,7 @@ ${form.message}`;
                     focus:border-secondary
                     focus:ring-2
                     focus:ring-secondary/20
+                    w-full min-w-0
                   "
                 />
 
@@ -205,6 +219,7 @@ ${form.message}`;
                     focus:border-secondary
                     focus:ring-2
                     focus:ring-secondary/20
+                    w-full min-w-0
                   "
                 />
 
@@ -228,6 +243,7 @@ ${form.message}`;
                   focus:border-secondary
                   focus:ring-2
                   focus:ring-secondary/20
+                  w-full min-w-0
                 "
               >
                 <option value="">{t.form.servicePlaceholder}</option>
@@ -261,6 +277,7 @@ ${form.message}`;
                   focus:border-secondary
                   focus:ring-2
                   focus:ring-secondary/20
+                  w-full min-w-0
                 "
               />
 
@@ -268,18 +285,21 @@ ${form.message}`;
               <button
                 type="submit"
                 className="
-                  inline-flex
-                  items-center
-                  gap-2
-                  rounded-full
-                  bg-secondary
-                  px-8
-                  py-4
-                  font-semibold
-                  text-white
-                  transition
-                  hover:bg-secondary-hover
-                "
+  flex
+  w-full
+  items-center
+  justify-center
+  gap-2
+  rounded-full
+  bg-secondary
+  px-6
+  py-4
+  font-semibold
+  text-white
+  transition
+  hover:bg-secondary-hover
+  sm:w-fit
+"
               >
                 {t.form.button}
                 <ArrowRight size={18} />
@@ -294,16 +314,20 @@ ${form.message}`;
           {/* Informações */}
           <div
             className="
-              rounded-[32px]
-              bg-primary
-              p-6
-              text-white
-              sm:p-8
-              lg:p-10
-            "
+  min-w-0
+  w-full
+  overflow-hidden
+  rounded-3xl
+  bg-primary
+  p-5
+  text-white
+  sm:rounded-[32px]
+  sm:p-8
+  lg:p-10
+"
           >
 
-            <h3 className="text-3xl font-bold">
+            <h3 className="text-2xl font-bold sm:text-3xl">
               {t.info.title}
             </h3>
 
@@ -324,10 +348,10 @@ ${form.message}`;
 
 
 
-              <div className="flex gap-4">
+              <div className="flex min-w-0 items-start gap-3 sm:gap-4">
                 <MessageCircle className="mt-1 text-secondary-light" />
 
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-sm text-white/50">
                     {t.info.whatsapp}
                   </p>
@@ -340,15 +364,15 @@ ${form.message}`;
 
 
 
-              <div className="flex gap-4">
+              <div className="flex min-w-0 items-start gap-3 sm:gap-4">
                 <Mail className="mt-1 text-secondary-light" />
 
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-sm text-white/50">
                     {t.info.email}
                   </p>
 
-                  <p className="font-medium">
+                  <p className="break-all text-sm font-medium sm:text-base">
                     jomacelpereiradossantos@gmail.com
                   </p>
                 </div>
@@ -356,10 +380,10 @@ ${form.message}`;
 
 
 
-              <div className="flex gap-4">
+              <div className="flex min-w-0 items-start gap-3 sm:gap-4">
                 <MapPin className="mt-1 text-secondary-light" />
 
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-sm text-white/50">
                     {t.info.address}
                   </p>

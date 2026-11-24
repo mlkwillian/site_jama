@@ -14,10 +14,10 @@ export default function Cases() {
     ...item,
   }));
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/site_jama";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
-    <section id="cases" className="bg-background py-24">
+    <section id="cases" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Cabeçalho */}
@@ -154,21 +154,7 @@ export default function Cases() {
                 </p>
 
 
-                <button
-                  className="
-                    mt-8
-                    flex
-                    items-center
-                    gap-2
-                    font-semibold
-                    text-secondary
-                    transition-all
-                    group-hover:gap-4
-                  "
-                >
-                  {t.detailsButton}
-                  <ArrowRight size={18} />
-                </button>
+              
 
               </div>
 
