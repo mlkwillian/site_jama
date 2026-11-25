@@ -29,6 +29,7 @@ const clients = [
   "/logos/logo22.jpeg",
   "/logos/logo23.jpeg",
   "/logos/logo24.jpeg",
+  "/logos/logo25.jpg",
 ];
 
 export default function Clients() {
